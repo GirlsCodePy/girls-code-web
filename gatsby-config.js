@@ -16,6 +16,15 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["geomanistregular"],
+          urls: ["/fonts/fonts.css"],
+        },
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
