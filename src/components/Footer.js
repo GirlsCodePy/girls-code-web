@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
 import logo from '../img/logo.svg'
@@ -7,8 +7,13 @@ import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
 
-const Footer = class extends React.Component {
+import { withTranslation } from 'react-i18next';
+import LanguageSwitcher from "./LanguageSwitcher";
+
+const Footer = class extends Component {
   render() {
+    const { t } = this.props;
+
     return (
       <footer className="footer has-background-black has-text-white-ter">
         <div className="content has-text-centered">
@@ -26,12 +31,12 @@ const Footer = class extends React.Component {
                   <ul className="menu-list">
                     <li>
                       <Link to="/" className="navbar-item">
-                        Home
+                        {t("home")}
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/about">
-                        About
+                        {t("about")}
                       </Link>
                     </li>
                     <li>
@@ -67,8 +72,11 @@ const Footer = class extends React.Component {
                     </li>
                     <li>
                       <Link className="navbar-item" to="/contact">
-                        Contact
+                        {t("contact")}
                       </Link>
+                    </li>
+                    <li>
+                      <LanguageSwitcher/>
                     </li>
                   </ul>
                 </section>
@@ -110,6 +118,6 @@ const Footer = class extends React.Component {
       </footer>
     )
   }
-}
+};
 
-export default Footer
+export default withTranslation()(Footer)
