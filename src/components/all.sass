@@ -2,30 +2,54 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 @font-face 
-  font-family: "geomanistregular";
+  font-family: "geomanistregular"
   src: url("../../static/fonts/geomanist-regular-webfont.woff") format("woff")
- 
+
+@font-face 
+  font-family: "Roboto"
+  src: url("../../static/fonts/Roboto-Regular.ttf") format("ttf")
+
+@font-face 
+  font-family: "Geomanist"
+  src: url("../../static/fonts/Geomanist-Black.otf") format("otf")
+
 // Config vars
 
 // Kaldi logo brand color: #FD461E
 $gc-purple: #CA00CA
 $gc-purple-invert: #5D0F85
-$family-primary: geomanistregular
+$family-primary: Geomanist
+$family-secondary: Roboto
 $primary: $gc-purple
 $primary-invert: $gc-purple-invert
 $body-color: #333
 $black: #2b2523
 
+
+//title
 .h1
+  font-size: 3.5rem
+
+.principal-title
 	height: 63px 
 	width: 432px 
 	color: #282828 
-	font-family: geomanistregular 
-	font-size: 61px 
+	font-family: Geomanist 
+	font-size: 3.5rem
 	font-weight: 900 
 	letter-spacing: 0 
 	line-height: 63px 
-	text-align: center 
+  
+
+.title-content 
+  height: 127px
+  width: 490px
+  color: #282828
+  font-family: Roboto
+  font-size: 22px
+  letter-spacing: 0
+  line-height: 33px
+  text-align: right
 
 
 .navbar .navbar-menu
