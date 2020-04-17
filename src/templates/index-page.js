@@ -72,10 +72,10 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1>{mainpitch.title}</h1>
+                    <div className="principal-title">{mainpitch.title}</div>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <div className="title-content">{mainpitch.description}</div>
                   </div>
                 </div>
                 <div className="columns">
