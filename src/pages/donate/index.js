@@ -28,7 +28,7 @@ const DonatePage  = class extends Component {
           </h1>
           <p className="gc-pink-text">{t("sendMessage")}</p>
           <div className="gc-purple-button">
-            {t("writeUs")}
+            {t("donateUs")}
           </div>
         </div>
       </Layout>
