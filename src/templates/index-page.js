@@ -5,6 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import Donate from '../components/Donate'
 
 import '../i18n';
 
@@ -80,6 +81,7 @@ export const IndexPageTemplate = ({
                     <div className="title-content">{mainpitch.description}</div>
                   </div>
                 </div>
+                <Donate />
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
