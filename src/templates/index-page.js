@@ -11,6 +11,7 @@ import WriteUs from '../img/writeUs.svg';
 
 import '../i18n';
 import Encourage from '../components/Encourage'
+import WhoWeAre from '../components/WhoWeAre'
 
 export const IndexPageTemplate = ({
   image,
@@ -84,6 +85,7 @@ export const IndexPageTemplate = ({
                     <div className="title-content">{mainpitch.description}</div>
                   </div>
                 </div>
+                <WhoWeAre />
                 <Encourage 
                   image={FlowerLogo}
                   title="wantColaborate"
