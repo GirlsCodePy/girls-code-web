@@ -11,6 +11,12 @@ import GirlsCodeLogo from "../components/GirlsCodeLogo";
 const VERTICAL_OFFSET = 63;
 const NAV_ELEMENTS_HEIGHT = 50;
 
+import FlowerLogo from '../img/flower.svg';
+import WriteUs from '../img/writeUs.svg';
+
+import '../i18n';
+import Encourage from '../components/Encourage'
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -235,12 +241,26 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div className="content">
                   <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
+                    <div className="principal-title">{mainpitch.title}</div>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <div className="title-content">{mainpitch.description}</div>
                   </div>
                 </div>
+                <Encourage 
+                  image={FlowerLogo}
+                  title="wantColaborate"
+                  subtitle="supportUs"
+                  buttonLabel="donate"
+                  buttonLink="https://www.patreon.com/"
+                />
+                <Encourage 
+                  image={WriteUs}
+                  title="bePart"
+                  subtitle="sendMessage"
+                  buttonLabel="writeUs"
+                  buttonLink="/contact"
+                />
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">

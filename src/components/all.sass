@@ -1,15 +1,113 @@
+
 @import "~bulma/sass/utilities/initial-variables"
 
-// Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+@font-face 
+  font-family: "geomanistregular"
+  src: url("../../static/fonts/geomanist-regular-webfont.woff") format("woff")
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+@font-face 
+  font-family: "Roboto"
+  src: url("../../static/fonts/Roboto-Regular.ttf") format("ttf")
+
+@font-face 
+  font-family: "Geomanist"
+  src: url("../../static/fonts/Geomanist-Black.otf") format("otf")
+
+// Config vars
+
+$gc-purple: #CA00CA
+$gc-purple-invert: #5D0F85
+$family-primary: Geomanist
+$family-secondary: Roboto
+$primary: $gc-purple
+$primary-invert: $gc-purple-invert
 $body-color: #333
 $black: #2b2523
+$gc-dark-purple: #8227B1
+$gc-purple-background: #5D0F85
+$gc-yellow: #DDDD37
+$gc-corner-radius: 3px
 
+
+//title
+.h1
+  font-size: 3.5rem
+
+.h2
+  font-size: 2.5rem
+
+.principal-title
+	height: 63px 
+	width: 432px 
+	color: #282828 
+	font-family: Geomanist 
+	font-size: 3.5rem
+	font-weight: 900 
+	letter-spacing: 0 
+	line-height: 63px 
+  
+
+.title-content 
+  height: 127px
+  width: 490px
+  color: #282828
+  font-family: Roboto
+  font-size: 22px
+  letter-spacing: 0
+  line-height: 33px
+  text-align: right
+
+
+.gc-subtitle
+  color: $gc-purple !important;
+  text-transform: uppercase;
+  font-family: Geomanist;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 47px;
+  text-align: center;
+
+
+.gc-pink-text
+  color: $gc-purple
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 31px;
+  text-align: center;
+
+
+.gc-centered-content
+  text-align: center;
+
+.gc-purple-button
+  height: 59px;
+  background: $gc-dark-purple;
+  box-shadow: 0px 0px 6px rgba(156, 156, 156, 0.5);
+  border-radius: $gc-corner-radius;
+  color: $gc-yellow
+  font-family: Geomanist;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  margin: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+
+.gc-purple-button:focus
+  outline: none;
+  box-shadow: none;
+
+    
+
+  
 .navbar .navbar-menu
   box-shadow:none !important
 
@@ -88,9 +186,9 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-active-color: $gc-purple-invert
+$menu-item-active-background-color:	$gc-purple-invert
+$menu-list-border-left: 1px solid $gc-purple-invert
 $menu-label-color: $white-ter
 
 

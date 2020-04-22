@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "geomanistregular";
+    src: url("geomanist-regular-webfont.woff");
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: url("Roboto-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Geomanist";
+    src: url("Geomanist-Black.otf");
+  }
