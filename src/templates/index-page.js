@@ -25,13 +25,13 @@ export const IndexPageTemplate = ({
   <div>
     <div
       className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${
-          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
-        })`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
+      // style={{
+      //   backgroundImage: `url(${
+      //     !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+      //   })`,
+      //   backgroundPosition: `top left`,
+      //   backgroundAttachment: `fixed`,
+      // }}
     >
       <div
         style={{
@@ -77,15 +77,14 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <div className="principal-title">{mainpitch.title}</div>
-                  </div>
-                  <div className="tile">
-                    <div className="title-content">{mainpitch.description}</div>
-                  </div>
-                </div>
-                <WhoWeAre />
+                <WhoWeAre 
+                  title={mainpitch.title}
+                  image={mainpitch.logo}
+                  description={mainpitch.description}
+                  link={mainpitch.link}
+                  label={mainpitch.label}
+
+                />
                 <Encourage 
                   image={FlowerLogo}
                   title="wantColaborate"
@@ -108,7 +107,7 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
+                {/* <Features gridItems={intro.blurbs} /> */}
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
@@ -120,7 +119,7 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
-                  <BlogRoll />
+                  {/* <BlogRoll /> */}
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Read more
@@ -150,6 +149,8 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
+
+  console.log(frontmatter.mainpitch)
 
   return (
     <Layout>
@@ -193,6 +194,9 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+          logo
+          link
+          label
         }
         description
         intro {
