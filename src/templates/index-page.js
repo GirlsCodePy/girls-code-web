@@ -7,15 +7,15 @@ import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 import ToolsLogo from "../components/ToolsLogo";
 import GirlsCodeLogo from "../components/GirlsCodeLogo";
+import FlowerLogo from '../img/flower.svg';
+import WriteUs from '../img/writeUs.svg';
+import '../i18n';
+import Encourage from '../components/Encourage'
 
 const VERTICAL_OFFSET = 63;
 const NAV_ELEMENTS_HEIGHT = 50;
 
-import FlowerLogo from '../img/flower.svg';
-import WriteUs from '../img/writeUs.svg';
 
-import '../i18n';
-import Encourage from '../components/Encourage'
 
 export const IndexPageTemplate = ({
   image,
