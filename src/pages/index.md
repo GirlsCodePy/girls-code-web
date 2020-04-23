@@ -7,7 +7,7 @@ subheading: Support sustainable farming while enjoying a cup
 mainpitch:
   title: Quiénes Somos
   description: Buscamos la inclusión digital de mujeres en las áreas de STEAM en todo Paraguay con espacios de aprendizaje en base a nuestros valores.
-  logo: "/img/girls.svg"
+  logo: girls
   link: /team
   label: Equipo
 description: >-

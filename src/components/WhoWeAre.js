@@ -7,7 +7,8 @@ const WhoWeAre = class extends Component {
   render() {
     return (
       <div className="flex">
-        <img src={this.props.image} style={{ width: "45%" }} />
+        {/* Esto no es lo mas apropiado pero no me funcionaba la carga de imagen, alternativa temporal. */}
+        <img src={"/img/"+this.props.image+".svg"} style={{ width: "45%" }} />
         <div className="container gc-ended-content" style={{ paddingTop: "2em" }}>
           <span className="principal-title">{this.props.title}</span>
           <p className="title-content">{this.props.description}</p>
