@@ -25,20 +25,19 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <SplitBanner />
+    <WhoWeAre
+      title={mainpitch.title}
+      image={mainpitch.logo}
+      description={mainpitch.description}
+      link={mainpitch.link}
+      label={mainpitch.label}
+    />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <WhoWeAre 
-                  title={mainpitch.title}
-                  image={mainpitch.logo}
-                  description={mainpitch.description}
-                  link={mainpitch.link}
-                  label={mainpitch.label}
-
-                />
                 <Encourage 
                   image={FlowerLogo}
                   title="wantColaborate"

@@ -6,7 +6,7 @@ import ShowMore from './ShowMore'
 const WhoWeAre = class extends Component {
   render() {
     return (
-      <div className="flex">
+      <div className="flex" style={{marginRight: "11.5rem", marginTop: "8rem"}}>
         {/* Esto no es lo mas apropiado pero no me funcionaba la carga de imagen, alternativa temporal. */}
         <img src={"/img/"+this.props.image+".svg"} style={{ width: "45%" }} />
         <div className="container gc-ended-content" style={{ paddingTop: "2em" }}>
