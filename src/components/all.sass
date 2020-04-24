@@ -27,6 +27,7 @@ $gc-dark-purple: #8227B1
 $gc-purple-background: #5D0F85
 $gc-yellow: #DDDD37
 $gc-corner-radius: 3px
+$gc-black: #282828
 
 
 //title
@@ -36,21 +37,20 @@ $gc-corner-radius: 3px
 .h2
   font-size: 2.5rem
 
+.flex
+  display: flex;
+
 .principal-title
-	height: 63px 
-	width: 432px 
-	color: #282828 
+	color: $gc-black
 	font-family: Geomanist 
-	font-size: 3.5rem
+	font-size: 4rem
 	font-weight: 900 
 	letter-spacing: 0 
 	line-height: 63px 
   
 
-.title-content 
-  height: 127px
-  width: 490px
-  color: #282828
+.title-content
+  color: $gc-black
   font-family: Roboto
   font-size: 22px
   letter-spacing: 0
@@ -74,13 +74,20 @@ $gc-corner-radius: 3px
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 22px;
-  line-height: 31px;
+  font-size: 1.5rem;
   text-align: center;
 
 
 .gc-centered-content
   text-align: center;
+
+
+.gc-ended-content
+  text-align: end !important;
+
+.gc-thin-text
+  font-size: 1rem;
+  font-weight: 600;
 
 .gc-purple-button
   height: 59px;
