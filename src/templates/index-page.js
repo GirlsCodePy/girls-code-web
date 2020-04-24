@@ -12,6 +12,7 @@ import WriteUs from "../img/writeUs.svg";
 import "../i18n";
 import Encourage from "../components/Encourage";
 import SplitBanner from "../components/SplitBanner";
+import WhoWeAre from "../components/WhoWeAre";
 
 export const IndexPageTemplate = ({
   image,
@@ -24,21 +25,20 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <SplitBanner />
+    <WhoWeAre
+      title={mainpitch.title}
+      image={mainpitch.logo}
+      description={mainpitch.description}
+      link={mainpitch.link}
+      label={mainpitch.label}
+    />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <div className="principal-title">{mainpitch.title}</div>
-                  </div>
-                  <div className="tile">
-                    <div className="title-content">{mainpitch.description}</div>
-                  </div>
-                </div>
-                <Encourage
+                <Encourage 
                   image={FlowerLogo}
                   title="wantColaborate"
                   subtitle="supportUs"
@@ -60,7 +60,7 @@ export const IndexPageTemplate = ({
                     <p>{description}</p>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
+                {/* <Features gridItems={intro.blurbs} /> */}
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
@@ -72,7 +72,7 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
-                  <BlogRoll />
+                  {/* <BlogRoll /> */}
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Read more
@@ -145,6 +145,9 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+          logo
+          link
+          label
         }
         description
         intro {
