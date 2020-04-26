@@ -13,7 +13,7 @@ class LanguageSwitcher extends Component {
         const { t } = this.props;
 
         return (
-            <div className="select">
+            <div className="select is-purple">
                 <select onChange={(e) => this.handleChangeLanguage(e)}>
                     <option value="es">{t("spanish")}</option>
                     <option value="en">{t("english")}</option>

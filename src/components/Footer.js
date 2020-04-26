@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
-import logo from '../img/logo.svg'
+import logo from '../img/logo-white.svg'
 import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import linkedIn from '../img/social/linkedIn.svg'
+import youtube from '../img/social/youtube.svg'
 
 import { withTranslation } from 'react-i18next';
 import LanguageSwitcher from "./LanguageSwitcher";
@@ -15,65 +16,102 @@ const Footer = class extends Component {
     const { t } = this.props;
 
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
-          <img
-            src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
-          />
-        </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
-            <div className="columns">
-              <div className="column is-4">
-                <section className="menu">
-                  <ul className="menu-list">
+      <footer className="footer has-background-purple has-text-white-ter">
+        <div className="content has-text-left has-background-purple has-text-white-ter">
+          <div className="container has-text-left has-background-purple has-text-white-ter">
+            <div className="footer-content columns">
+              <div className="column is-one-quarter">
+                <section className="footer-menu">
+                  <div className="footer-title">{t("learnMore")}</div>
+                  <ul className="footer-menu-list">
                     <li>
-                      <Link to="/" className="navbar-item">
+                      <Link to="/" className="footer-item">
                         {t("home")}
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/about">
+                      <Link className="footer-item" to="/about">
                         {t("about")}
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/products">
-                        Products
+                      <Link className="footer-item" to="/team">
+                        {t("team")}
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
+                      <Link className="footer-item" to="/activities">
+                        {t("activities")}
                       </Link>
                     </li>
                     <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
+                      <Link className="footer-item" to="/activities/resources">
+                        {t("resources")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="footer-item" to="/store">
+                        {t("store")}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="footer-item" to="/store/donate">
+                        {t("donate")}
+                      </Link>
                     </li>
                   </ul>
                 </section>
               </div>
-              <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
+              <div className="column is-one-quarter">
+                <section className="footer-menu">
+                  <div className="footer-title">{t("contact")}</div>
+                  <ul className="footer-menu-list">
                     <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
+                      <p className="footer-item">
+                        +595 981 931 249
+                      </p>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact">
-                        {t("contact")}
-                      </Link>
+                      <p className="footer-item">
+                        +595 981 631 303
+                      </p>
+                    </li>
+                    <li>
+                      <p className="footer-item">
+                        contacto@girlscode.com.py
+                      </p>
+                    </li>
+                    <li>
+                      <div className="social footer-item">
+                      <a title="Twitter" href="https://twitter.com/pygirlscode" target='_blank'>
+                          <img src={twitter}
+                              alt="Twitter"
+                          />
+                        </a>
+                        <a title="Facebook" href="https://www.facebook.com/girlscodepy/" target='_blank'>
+                          <img src={facebook}
+                              alt="Facebook"
+                          />
+                        </a>
+                        <a title="Instagram" href="https://www.instagram.com/girlscodepy/" target='_blank'>
+                          <img
+                              src={instagram}
+                              alt="Instagram"
+                          />
+                        </a>
+                        <a title="LinkedIn" href="https://www.linkedin.com/company/girls-code/" target='_blank'>
+                          <img
+                              src={linkedIn}
+                              alt="LinkedIn"
+                          />
+                        </a>
+                        <a title="Youtube" href="https://www.youtube.com/channel/UCP6E5xXwLJ6OWtM4E1DSQvw" target='_blank'>
+                          <img
+                              src={youtube}
+                              alt="youtube"
+                          />
+                        </a>
+                      </div>
                     </li>
                     <li>
                       <LanguageSwitcher/>
@@ -81,37 +119,17 @@ const Footer = class extends Component {
                   </ul>
                 </section>
               </div>
-              <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
-                  <img
-                    src={facebook}
-                    alt="Facebook"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="twitter" href="https://twitter.com">
-                  <img
-                    className="fas fa-lg"
-                    src={twitter}
-                    alt="Twitter"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="instagram" href="https://instagram.com">
-                  <img
-                    src={instagram}
-                    alt="Instagram"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
-                <a title="vimeo" href="https://vimeo.com">
-                  <img
-                    src={vimeo}
-                    alt="Vimeo"
-                    style={{ width: '1em', height: '1em' }}
-                  />
-                </a>
+              <div className="column is-half">
+
               </div>
+            </div>
+            <div className="content has-text-right copyright">
+              <p>© 2018 #GirlsCode All rights reserved</p>
+              <img
+                  src={logo}
+                  alt="girlscode"
+                  style={{ width: '147px', height: '19px' }}
+              />
             </div>
           </div>
         </div>
