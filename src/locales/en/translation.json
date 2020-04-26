@@ -1,15 +1,20 @@
 {
   "home": "Home",
   "about": "About",
-  "help": "Help",
+  "team": "Team",
+  "activities": "Activities",
+  "resources": "Resources",
+  "store": "Store",
   "contact": "Contact",
+  "help": "Help",
   "spanish": "Spanish",
   "english": "English",
   "bePart": "Do you want to be part of the change?",
   "sendMessage": "Cheer up and send us a message!",
   "donate": "Donate",
   "writeUs": "Write us",
-  "wantColaborate": "Do you want collaborate?",
-  "supportUs": "Cheer up and support us!"
-
+  "wantCollaborate": "Do you want collaborate?",
+  "supportUs": "Cheer up and support us!",
+  "learnMore": "Learn More",
+  "subscribeEmails": "Subscribe to our emails"
 }

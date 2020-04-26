@@ -40,7 +40,7 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <Encourage 
                   image={FlowerLogo}
-                  title="wantColaborate"
+                  title="wantCollaborate"
                   subtitle="supportUs"
                   buttonLabel="donate"
                   buttonLink="https://www.patreon.com/"
