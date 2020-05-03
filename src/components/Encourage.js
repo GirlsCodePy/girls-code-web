@@ -45,12 +45,16 @@ const Encourage = class extends Component {
 
 const GCLink = class extends Component {
   parseLink(to) {
-    let parser = document.createElement('a');
-    parser.href = to;
-    return parser;
+    if (typeof window !== 'undefined') {
+      let parser = document.createElement('a');
+      parser.href = to;
+      return parser;
+    }
   }
   isInternal(toLocation) {
-    return window.location.host === toLocation.host;
+    if (typeof window !== 'undefined') {
+      return window.location.host === toLocation.host;
+    }
   }
 
   render() {
