@@ -1,15 +1,17 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
+import "./style.sass"
 
-import logo from '../img/logo-white.svg'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import linkedIn from '../img/social/linkedIn.svg'
-import youtube from '../img/social/youtube.svg'
+import logo from '../../img/logo-white.svg'
+import facebook from '../../img/social/facebook.svg'
+import instagram from '../../img/social/instagram.svg'
+import twitter from '../../img/social/twitter.svg'
+import linkedIn from '../../img/social/linkedIn.svg'
+import youtube from '../../img/social/youtube.svg'
 
 import { withTranslation } from 'react-i18next';
-import LanguageSwitcher from "./LanguageSwitcher";
+import LanguageSwitcher from "../LanguageSwitcher";
+
 
 const Footer = class extends Component {
   render() {
