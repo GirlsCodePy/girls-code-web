@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: feature/32
+  branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
     update: 'Update {{collection}} “{{slug}}”'
@@ -39,18 +39,16 @@ collections:
           - {label: Image, name: image, widget: image}
           - {label: Heading, name: heading, widget: string}
           - {label: Subheading, name: subheading, widget: string}
-          - {
-              label: Main Pitch,
-              name: mainpitch,
-              widget: object,
-              fields:
-                [
-                  { label: Title in English, name: title_en, widget: string },
-                  { label: Title en Español, name: title_es, widget: string },
-                  { label: Description in Englis, name: description_en, widget: string },
-                  { label: Descripcion en Español, name: description_es, widget: string }
-                ],
-            }          - {label: Description, name: description, widget: string}
+          - {label: Mainpitch, name: mainpitch, widget: object, fields: [
+              {label: Titulo Español, name: title_es, widget: string}, 
+              {label: Titulo Ingles, name: title_en, widget: string}, 
+              {label: Descripción Español, name: description_es, widget: text}, 
+               {label: Descripción Inglés, name: description_en, widget: text}, 
+              {label: Logo, name: logo, widget: text}, 
+              {label: Link, name: link, widget: string}, 
+              {label: Label, name: label, widget: string}
+            ]}
+          - {label: Description, name: description, widget: string}
           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Main, name: main, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Image1, name: image1, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image2, name: image2, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}, {label: Image3, name: image3, widget: object, fields: [{label: Image, name: image, widget: image}, {label: Alt, name: alt, widget: string}]}]}
       - file: "src/pages/about/index.md"
