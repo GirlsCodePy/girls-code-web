@@ -1,4 +1,43 @@
 version: 1
+backend:
+  name: git-gateway
+  branch: feature/32
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}"'
+    update: 'Update {{collection}} "{{slug}}"'
+    delete: 'Delete {{collection}} "{{slug}}"'
+    uploadMedia: '[skip ci] Upload "{{path}}"'
+    deleteMedia: '[skip ci] Delete "{{path}}"'
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    delete: false
+    files:
+      - file: "src/pages/index.md"
+        label: "Index Page"
+        name: "index"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index",
+            }
+          - { label: Image, name: image, widget: image }
+          - {
+              label: Main Pitch,
+              name: mainpitch,
+              widget: object,
+              fields:
+                [
+                  { label: Title in English, name: title_en, widget: string },
+                  { label: Title en Español, name: title_es, widget: string },
+                  { label: Description in Englis, name: description_en, widget: string },
+                  { label: Descripcion en Español, name: description_es, widget: string }
+                ],
+            }
+         
 
 update_configs:
   - package_manager: javascript
