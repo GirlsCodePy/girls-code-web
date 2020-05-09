@@ -2,35 +2,26 @@ import React from "react"
 import Layout from "../components/Layout"
 import TeamMember from "../components/TeamMember"
 
-const TeamPageTemplate = ({ title, members }) => {
-  console.log(title, members)
-  const team = new Array(10).fill(0)
-
-  return (
-    <section className="section">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="columns is-multiline">
-              <div className="column is-12">
-                <h1 className="principal-title-purple">{title}</h1>
-              </div>
-              {members.map(({ name, position, image }) => (
-                <div className="column is-3">
-                  <TeamMember
-                    name={name}
-                    position={position}
-                    imageSrc={image}
-                  />
-                </div>
-              ))}
+const TeamPageTemplate = ({ title, members }) => (
+  <section className="section">
+    <div className="container">
+      <div className="columns">
+        <div className="column is-10 is-offset-1">
+          <div className="columns is-multiline">
+            <div className="column is-12">
+              <h1 className="principal-title-purple">{title}</h1>
             </div>
+            {members.map(({ name, position, image }) => (
+              <div className="column is-3">
+                <TeamMember name={name} position={position} imageSrc={image} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </section>
-  )
-}
+    </div>
+  </section>
+)
 
 const TeamPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
