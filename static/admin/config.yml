@@ -149,6 +149,7 @@ collections:
         label: "Team"
         name: "team"
         fields:
+          - { label: "Title", name: "title", widget: "string" }
           - {
               label: "Members",
               name: members,
