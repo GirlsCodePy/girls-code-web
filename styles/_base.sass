@@ -1,3 +1,5 @@
+// Titles
+
 .h1
   font-size: 3.5rem
 
@@ -11,6 +13,11 @@
   font-weight: 900
   letter-spacing: 0
   line-height: 63px
+
+  &-purple
+    @extend .principal-title
+    color: $gc-purple-invert
+    font-size: 3rem
 
 .title-content
   color: $gc-black
@@ -30,6 +37,11 @@
   line-height: 47px
   text-align: center
 
+  &-small
+    @extend .gc-subtitle
+    font-size: 20px
+    line-height: 32px
+
 .gc-pink-text
   color: $gc-purple
   font-family: Roboto
@@ -37,6 +49,16 @@
   font-weight: normal
   font-size: 1.5rem
   text-align: center
+
+.gc-invert-text
+  color: $gc-purple-invert
+  font-family: Roboto
+  font-style: normal
+  font-weight: normal
+  font-size: 1rem
+  text-align: center
+
+// Buttons
 
 .gc-purple-button
   height: 59px
