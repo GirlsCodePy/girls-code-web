@@ -11,7 +11,7 @@ import youtube from '../../img/social/youtube.svg'
 
 import { withTranslation } from 'react-i18next';
 import LanguageSwitcher from "../LanguageSwitcher";
-
+import SubscribeForm from "../SubscribeForm";
 
 const Footer = class extends Component {
   render() {
@@ -21,7 +21,7 @@ const Footer = class extends Component {
       <footer className="footer has-background-purple has-text-white-ter">
         <div className="content has-text-left has-background-purple has-text-white-ter">
           <div className="container has-text-left has-background-purple has-text-white-ter">
-            <div className="columns">
+            <div className="columns is-mobile">
               <div className="column is-10 is-offset-1">
                 <div className="footer-content columns">
                   <div className="column is-one-quarter">
@@ -123,8 +123,9 @@ const Footer = class extends Component {
                       </ul>
                     </section>
                   </div>
-                  <div className="column is-half">
-
+                  <div className="column is-5 is-offset-1">
+                    <div className="footer-title">{t("subscribeEmails")}</div>
+                    <SubscribeForm/>
                   </div>
                 </div>
                 <div className="content has-text-right copyright">
