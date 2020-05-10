@@ -5,20 +5,18 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
-import ToolsLogo from "../components/ToolsLogo";
-import GirlsCodeLogo from "../components/GirlsCodeLogo";
 import FlowerLogo from "../img/flower.svg";
 import WriteUs from "../img/writeUs.svg";
 import "../i18n";
 import Encourage from "../components/Encourage";
 import SplitBanner from "../components/SplitBanner";
+import {useTranslatedData} from "../utils";
 import WhoWeAre from "../components/WhoWeAre";
 
 export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  subheading,
   mainpitch,
   description,
   intro,
@@ -92,7 +90,6 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
   intro: PropTypes.shape({
@@ -102,15 +99,15 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
+  const mainpitch = useTranslatedData(frontmatter.mainpitch)
+  console.log(mainpitch);
   return (
     <Layout>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
+        mainpitch={mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -141,10 +138,11 @@ export const pageQuery = graphql`
           }
         }
         heading
-        subheading
         mainpitch {
-          title
-          description
+          title_en
+          title_es
+          description_en
+          description_es
           logo
           link
           label
