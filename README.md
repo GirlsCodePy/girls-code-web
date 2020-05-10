@@ -1,4 +1,3 @@
-# Website de Girls Code 
 <p align="center">
   <a href="https://girlscode.netlify.app/">
     <img alt="Website de Girls Code" src="https://pbs.twimg.com/profile_images/1188603250288840704/16W27Bsc_400x400.jpg" width="60" />
@@ -57,4 +56,4 @@ Se levanta el proyecto localmente en http://localhost:8000/
 
 ## 🤝 Licencia
 
-Este proyecto está licenciado bajo los términos de la Licencia Pública General GNU v3.0 - vea el archivo [LICENSE] (LICENSE) para más detalles
+Este proyecto está licenciado bajo los términos de la Licencia Pública General GNU v3.0 - vea el archivo [LICENSE](./LICENSE) para más detalles
