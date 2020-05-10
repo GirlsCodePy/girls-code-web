@@ -1,5 +1,12 @@
 # Website de Girls Code 
-
+<p align="center">
+  <a href="https://girlscode.netlify.app/">
+    <img alt="Website de Girls Code" src="https://pbs.twimg.com/profile_images/1188603250288840704/16W27Bsc_400x400.jpg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Website de Girls Code 
+</h1>
 
 ## 🤖 Trabajar con un repo remoto 
 
@@ -8,7 +15,8 @@ Trabajar sobre un fork del proyecto. Hacer los PRs desde el fork.
 Documentación de cómo hacer fork del proyecto aqui.  https://help.github.com/es/github/getting-started-with-github/fork-a-repo
 
 Comandos para setear repositorio localmente
-```
+
+```shell
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
 git remote add girlscodepy https://github.com/GirlsCodePy/girls-code-web.git
 ```
@@ -18,10 +26,11 @@ git remote add girlscodepy https://github.com/GirlsCodePy/girls-code-web.git
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 - [Netlify CLI](https://github.com/netlify/cli)
 
-## Instalar dependencias y correr localmente
+## 🚀 Instalar dependencias y correr localmente
 
 Ejecutar los comandos en la consola 
-```
+
+```shell
 yarn install 
 yarn start 
 ```
@@ -46,6 +55,6 @@ Se levanta el proyecto localmente en http://localhost:8000/
 
 
 
-## Licencia
+## 🤝 Licencia
 
 Este proyecto está licenciado bajo los términos de la Licencia Pública General GNU v3.0 - vea el archivo [LICENSE] (LICENSE) para más detalles
