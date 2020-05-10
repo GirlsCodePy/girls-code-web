@@ -32,7 +32,7 @@ const Encourage = class extends Component {
             display: "inline-block" }}>
               <GCLink link={this.props.buttonLink}>
                 <button 
-                    className="gc-purple-button">
+                    className="gc-button is-dark-purple">
                   {t(this.props.buttonLabel)}
                 </button>
               </GCLink>
