@@ -37,7 +37,7 @@ yarn start
 Se levanta el proyecto localmente en http://localhost:8000/
 
 ## Estructura del Proyecto
-
+```
 ├── src
 │   └── components // Carpeta de componentes
 │   │  └── Component // Un folder para cada componente (si necesita estilos propios)
@@ -52,7 +52,7 @@ Se levanta el proyecto localmente en http://localhost:8000/
 │   └── _variables.sass // Variables, disponible sin importar en todos los archivos
 │   └── main.sass // Bulma e internal imports
 
-
+```
 
 ## 🤝 Licencia
 
