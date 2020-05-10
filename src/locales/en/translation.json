@@ -16,5 +16,9 @@
   "wantCollaborate": "Do you want collaborate?",
   "supportUs": "Cheer up and support us!",
   "learnMore": "Learn More",
-  "subscribeEmails": "Subscribe to our emails"
+  "subscribeEmails": "Subscribe to our emails",
+  "name": "Name",
+  "lastName": "Lastname",
+  "email": "Email",
+  "subscribeMe": "Subscribe me"
 }
