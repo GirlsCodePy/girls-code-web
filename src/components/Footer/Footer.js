@@ -136,8 +136,8 @@ const Footer = class extends Component {
               style={{ width: "147px", height: "19px" }}
             />
             <p className="symbol">©</p>
-          </Container>
-        </div>
+          </div>
+        </Container>
       </footer>
     )
   }
