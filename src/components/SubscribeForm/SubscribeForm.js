@@ -26,7 +26,7 @@ class SubscribeForm extends Component {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: this.encode({ "form-name": "subscriptions", ...this.state })
+            body: this.encode({ "form-name": "subscription", ...this.state })
         })
             .then(() => alert("Gracias!"))
             .catch(error => console.error(error));
@@ -37,7 +37,10 @@ class SubscribeForm extends Component {
         let {name, lastName, email} = this.state;
 
         return (
-            <form className="gc-form" onSubmit={this.handleSubmit}>
+            <form className="gc-form" name="subscription" onSubmit={this.handleSubmit} method="POST"
+                  data-netlify="true" data-netlify-honeypot="bot-field" >
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="subscription" />
                 <div class="field is-horizontal">
                     <label class="label">
                         {t("name")}
