@@ -1,23 +1,44 @@
 import React from "react";
-import './styles.sass'
+import "./styles.sass";
+import cursos from "../../img/cursos.svg";
+import talleres from "../../img/talleres.svg";
+import mentorias from "../../img/mentorias.svg";
 
-
-export const WhatWeDo
- = ({}) => (
+export const WhatWeDo = ({}) => (
   <div className="column-container">
-  
-    <div className="column is-12">
-        <h1 className="principal-title-purple">Qué Hacemos</h1>
+    <div class="has-text-centered">
+      <h1 className="principal-title separation">Qué Hacemos</h1>
     </div>
-    <div class="columns">
+    <div class="columns columns-centered">
       <div class="column">
-      <div class="box"> Talleres</div>
+        <div class="box flex-box">
+          <img
+            src={talleres}
+            alt="cursos"
+            class="img-size"
+          />
+          <div class="box-text">Talleres</div>
+        </div>
       </div>
       <div class="column">
-      <div class="box"> Cursos</div>
+        <div class="box flex-box">
+          <img
+            src={cursos}
+            alt="cursos"
+            class="img-size"
+          />
+          <div class="box-text">Cursos</div>
+        </div>
       </div>
       <div class="column">
-      <div class="box"> Mentorías</div>
+        <div class="box flex-box">
+          <img
+            src={mentorias}
+            alt="cursos"
+            class="img-size"
+          />
+          <div class="box-text">Mentorías</div>
+        </div>
       </div>
     </div>
   </div>
