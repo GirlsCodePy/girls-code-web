@@ -9,7 +9,7 @@ const ShowMore = class extends Component {
       <div className="gc-ended-content" style={{marginTop: "1rem"}} >
         <Link to={this.props.link}>
           <span className="gc-pink-text gc-thin-text" style={{marginRight: "1rem"}}>{this.props.label}</span>
-          <img src={PlusImg} style={{ width: "2rem", height: "2rem", verticalAlign: "middle" }}/>
+          <img src={PlusImg} alt="+" style={{ width: "2rem", height: "2rem", verticalAlign: "middle" }}/>
         </Link>
       </div>
     )

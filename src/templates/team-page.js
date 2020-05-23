@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import TeamMember from "../components/TeamMember"
 import Container from "../components/Container"
+import { graphql } from "gatsby"
 
 const TeamPageTemplate = ({ title, members }) => (
   <Container>
