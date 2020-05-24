@@ -84,6 +84,7 @@ const Footer = class extends Component {
                         title="Twitter"
                         href="https://twitter.com/pygirlscode"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <img src={twitter} alt="Twitter" />
                       </a>
@@ -91,6 +92,7 @@ const Footer = class extends Component {
                         title="Facebook"
                         href="https://www.facebook.com/girlscodepy/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <img src={facebook} alt="Facebook" />
                       </a>
@@ -98,6 +100,7 @@ const Footer = class extends Component {
                         title="Instagram"
                         href="https://www.instagram.com/girlscodepy/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <img src={instagram} alt="Instagram" />
                       </a>
@@ -105,6 +108,7 @@ const Footer = class extends Component {
                         title="LinkedIn"
                         href="https://www.linkedin.com/company/girls-code/"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <img src={linkedIn} alt="LinkedIn" />
                       </a>
@@ -112,6 +116,7 @@ const Footer = class extends Component {
                         title="Youtube"
                         href="https://www.youtube.com/channel/UCP6E5xXwLJ6OWtM4E1DSQvw"
                         target="_blank"
+                        rel="noreferrer"
                       >
                         <img src={youtube} alt="youtube" />
                       </a>
@@ -129,7 +134,7 @@ const Footer = class extends Component {
             </div>
           </div>
           <div className="content has-text-right copyright">
-            <p className="text">© 2018 #GirlsCode All rights reserved</p>
+            <p className="text">© 2020 #GirlsCode All rights reserved</p>
             <img
               src={logo}
               alt="girlscode"

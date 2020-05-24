@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import ToolsLogo from "../ToolsLogo";
 import GirlsCodeLogo from "../GirlsCodeLogo";
@@ -9,7 +8,7 @@ import './styles.sass'
 const VERTICAL_OFFSET = 63;
 const NAV_ELEMENTS_HEIGHT = 50;
 
-export const SplitBanner = ({}) => (
+export const SplitBanner = () => (
   <div className="split-main-container">
     <div className="split-section-left">
       <div className="split-left-content">

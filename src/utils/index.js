@@ -1,6 +1,4 @@
 import { useTranslation } from "react-i18next"
-import React from "react"
-
 
 export const useTranslatedData = data => {
   const { i18n } = useTranslation()
