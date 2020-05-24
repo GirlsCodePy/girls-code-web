@@ -16,3 +16,5 @@ const TeamPagePreview = ({ entry, getAsset }) => {
     />
   )
 }
+
+export default TeamPagePreview

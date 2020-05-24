@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
 import FlowerLogo from "../img/flower.svg";
 import WriteUs from "../img/writeUs.svg";
 import "../i18n";
@@ -15,12 +13,9 @@ import WhoWeAre from "../components/WhoWeAre";
 import WhatWeDo from "../components/WhatWeDo";
 
 export const IndexPageTemplate = ({
-  image,
-  title,
   heading,
   mainpitch,
   description,
-  intro,
 }) => (
   <div>
     <SplitBanner />
@@ -38,8 +33,7 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-              
-                <Encourage 
+                <Encourage
                   image={FlowerLogo}
                   title="wantCollaborate"
                   subtitle="supportUs"
