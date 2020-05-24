@@ -134,7 +134,7 @@ const Footer = class extends Component {
             </div>
           </div>
           <div className="content has-text-right copyright">
-            <p className="text">© 2018 #GirlsCode All rights reserved</p>
+            <p className="text">© 2020 #GirlsCode All rights reserved</p>
             <img
               src={logo}
               alt="girlscode"
