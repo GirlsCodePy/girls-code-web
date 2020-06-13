@@ -10,6 +10,7 @@ import Encourage from "../components/Encourage";
 import SplitBanner from "../components/SplitBanner";
 import {useTranslatedData} from "../utils";
 import WhoWeAre from "../components/WhoWeAre";
+import WhatWeDo from "../components/WhatWeDo";
 
 export const IndexPageTemplate = ({
   heading,
@@ -25,6 +26,7 @@ export const IndexPageTemplate = ({
       link={mainpitch.link}
       label={mainpitch.label}
     />
+    <WhatWeDo />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
