@@ -8,7 +8,7 @@ const WhoWeAre = class extends Component {
     return (
       <div className="flex" style={{marginRight: "11.5rem", marginTop: "9rem"}}>
         {/* Esto no es lo mas apropiado pero no me funcionaba la carga de imagen, alternativa temporal. */}
-        <img src={"/img/"+this.props.image+".svg"} style={{ width: "65%" }} />
+        <img src={"/img/"+this.props.image+".svg"} alt="img" style={{ width: "65%" }} />
         <div className="container gc-ended-content" style={{ marginTop: "5em" }}>
           <span className="principal-title">{this.props.title}</span>
           <p className="title-content" style={{marginTop:"2rem"}}>{this.props.description}</p>
