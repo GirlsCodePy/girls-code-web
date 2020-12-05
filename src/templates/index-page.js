@@ -10,6 +10,9 @@ import Encourage from "../components/Encourage";
 import SplitBanner from "../components/SplitBanner";
 import {useTranslatedData} from "../utils";
 import WhoWeAre from "../components/WhoWeAre";
+import WhatWeDo from "../components/WhatWeDo";
+import Partner from "../components/Partner";
+
 
 export const IndexPageTemplate = ({
   heading,
@@ -25,12 +28,14 @@ export const IndexPageTemplate = ({
       link={mainpitch.link}
       label={mainpitch.label}
     />
+    <WhatWeDo />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
+                <Partner />
                 <Encourage
                   image={FlowerLogo}
                   title="wantCollaborate"

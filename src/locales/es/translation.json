@@ -20,5 +20,10 @@
   "name": "Nombre",
   "lastName": "Apellido",
   "email": "Correo",
-  "subscribeMe": "Subscribirme"
+  "subscribeMe": "Subscribirme",
+  "whatWeDo":"Qué Hacemos",
+  "courses": "Cursos",
+  "workshops": "Talleres",
+  "mentorship": "Mentorías",
+  "partners": "Alianzas"
 }
