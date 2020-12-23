@@ -21,7 +21,7 @@ export const SplitBanner = () => (
           <GirlsCodeLogo />
         </div>
         <h1 className="split-label-white">Nosotras creemos</h1>
-        <h1 className="split-label-accent">Ellas hacen</h1>
+        <h1 className="split-label-accent">Ellas crean</h1>
       </div>
       <div className="split-left-triangle" />
     </div>
