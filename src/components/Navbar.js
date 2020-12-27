@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import ToolsLogo from "../components/ToolsLogo";
+import '../components/SplitBanner/styles.sass'
+
+const NAV_ELEMENTS_HEIGHT = 50;
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -34,16 +36,15 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
+
+      
+      <div
+        className="is-transparent"
         role="navigation"
         aria-label="main-navigation"
       >
-        <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
+           
             {/* Hamburger menu */}
             <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -55,42 +56,33 @@ const Navbar = class extends React.Component {
               <span />
             </div>
           </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
+         
+            <div style={{
+                position: "absolute",
+                top: `${NAV_ELEMENTS_HEIGHT}px`,
+                width: "100%",
+                display: "flex",
+                flexDirection: "row",
+              }}>
+              <Link className="navbar-item" to="/team">
+                Nosotras
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
+              <Link className="navbar-item" to="/activities">
+                Actividades
               </Link>
               <Link className="navbar-item" to="/blog">
-                Blog
+                Tienda
               </Link>
               <Link className="navbar-item" to="/contact">
-                Contact
+                Contacto
               </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
+              
             </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
+            <div className="split-right-img-container">
+            <ToolsLogo />
             </div>
-          </div>
-        </div>
-      </nav>
+       
+      </div>
     )
   }
 }
