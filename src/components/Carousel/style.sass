@@ -1,16 +1,30 @@
-.carousel-container
+.carousel-container-workshops
   background-color: $gc-purple
+  width: 100%
+  padding: 8rem 0 5rem 0
+
+.carousel-container-courses
+  background-color: $gc-purple-invert
+  width: 100%
+  padding: 8rem 0 5rem 0
+
+.carousel-container-mentoring
+  background-color: $gc-yellow-cream
   width: 100%
   padding: 8rem 0 5rem 0
 
 .carousel-clip
   overflow: hidden
+  margin-top: 30px
+  margin-bottom: 30px
 
 .carousel-roll
   display: flex
 
 .carousel-content
   display: flex
+  margin-left: 5px
+  margin-right: 5px
 
 .carousel-img
   width: 50%
@@ -19,9 +33,11 @@
   img
     height: 20rem
     object-fit: cover
-
   p
+    font-size: 20px
     align-self: flex-end
+  p.right
+    align-self: flex-start
 
 .carousel-text
   color: white
@@ -31,18 +47,37 @@
   width: 50%
   padding: 0rem 7rem 0rem 5rem
 
+  .gc-text
+    font-size: 22px
+
+.carousel-dots-container-left
+  display: flex
+  width: 50%
+  justify-content: flex-end
+
+.carousel-dots-container-right
+  display: flex
+  width: 50%
+  margin-left: auto;
+  justify-content: flex-start
+  
 .carousel-dots
   display: flex
-  width: 100%
-  justify-content: center
+  width: 60px
+  justify-content: space-between
 
 .carousel-dot
-  height: 5px
-  width: 5px
+  height: 6px
+  width: 6px
   background-color: white
   border-radius: 50%
   cursor: pointer
-  margin: 0 1rem
+
+.carousel-dot-workshops, .carousel-dot-courses
+  background-color: white
+
+.carousel-dot-mentoring
+  background-color: $gc-purple
 
 @media screen and (max-width: 924px)
   .carousel-content
@@ -51,3 +86,4 @@
   .carousel-img, .carousel-text
     width: 100%
     padding: 0
+    margin-bottom: 30px
