@@ -4,7 +4,9 @@ import PropTypes from "prop-types"
 import "./styles.sass"
 
 const TeamMember = ({ name, position, imageSrc }) => (
+ 
   <div className="team-container">
+     
     <div className="team-circle-container">
       <img className="team-image" src={imageSrc} alt={`${name}`} />
     </div>
