@@ -8,6 +8,9 @@ backend:
     uploadMedia: "[skip ci] Upload “{{path}}”"
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
+# when using the default proxy server port
+#local_backend: true
+
 media_folder: static/img
 public_folder: /img
 
@@ -143,8 +146,79 @@ collections:
               widget: "hidden",
               default: "about-page",
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Título Español", name: title_es, widget: string }
+          - { label: "Título Inglés", name: title_en, widget: string }
+          - {
+            label: "Visión",
+            name: "vision",
+            widget: object,
+            fields:
+              [
+                { label: "Título Español", name: title_es, widget: string },
+                { label: "Título Inglés", name: title_en, widget: string },
+                {
+                  label: "Descripción Español",
+                  name: description_es,
+                  widget: text,
+                },
+                {
+                  label: "Descripción Inglés",
+                  name: description_en,
+                  widget: text,
+                },
+                {
+                  label: "Image info",
+                  name: imageInfo,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt, name: alt, widget: string },
+                    ],
+                },
+              ],
+          }
+          - {
+            label: "Misión",
+            name: "mission",
+            widget: object,
+            fields:
+              [
+                { label: "Título Español", name: title_es, widget: string },
+                { label: "Título Inglés", name: title_en, widget: string },
+                {
+                  label: "Descripción Español",
+                  name: description_es,
+                  widget: text,
+                },
+                {
+                  label: "Descripción Inglés",
+                  name: description_en,
+                  widget: text,
+                },
+                {
+                  label: "Image info",
+                  name: imageInfo,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt, name: alt, widget: string },
+                    ],
+                },
+                {
+                  label: "Ver más",
+                  name: "showMore",
+                  widget: object,
+                  fields:
+                    [
+                      { label: "Etiqueta Español", name: label_es, widget: string },
+                      { label: "Etiqueta Inglés", name: label_en, widget: string },
+                      { label: "Link", name: "link", widget: text },
+                    ],
+                }
+              ],
+          }
       - file: "src/pages/team/index.md"
         label: "Team"
         name: "team"

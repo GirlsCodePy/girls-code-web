@@ -27,5 +27,7 @@
   "mentorship": "Mentorías",
   "partners": "Alianzas",
   "subscriptionSuccess": "Gracias por subscribirte!",
-  "subscriptionError": "Ocurrió un error al enviar el formulario :( Por favor, intentá de vuelta en unos minutos."
+  "subscriptionError": "Ocurrió un error al enviar el formulario :( Por favor, intentá de vuelta en unos minutos.",
+  "vision": "Visión",
+  "mission": "Misión"
 }
