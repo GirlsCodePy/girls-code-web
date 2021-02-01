@@ -25,5 +25,7 @@
   "courses": "Courses",
   "workshops": "Workshops",
   "mentorship": "Mentorship",
-  "partners": "Partners"
+  "partners": "Partners",
+  "subscriptionSuccess": "Thanks for subscribing!",
+  "subscriptionError": "An error occurred while submitting the form :( Please, try again in a few minutes."
 }

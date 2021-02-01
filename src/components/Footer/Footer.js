@@ -13,7 +13,7 @@ import { withTranslation } from "react-i18next"
 import LanguageSwitcher from "../LanguageSwitcher"
 import Container from "../Container"
 
-import SubscribeForm from "../SubscribeForm"
+import SubscriptionForm from "../SubscriptionForm";
 
 const Footer = ({t}) => (
     <footer className="footer has-background-purple has-text-white-ter">
@@ -126,7 +126,7 @@ const Footer = ({t}) => (
           </div>
           <div className="column is-5 is-offset-1">
             <div className="footer-title">{t("subscribeEmails")}</div>
-            <SubscribeForm />
+            <SubscriptionForm />
           </div>
         </div>
         <div className="content has-text-right copyright">
