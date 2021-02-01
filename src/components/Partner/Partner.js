@@ -3,7 +3,7 @@ import {withTranslation} from "react-i18next";
 import './styles.sass';
 
 export const Partner = ({t}) => (
-    <div>
+    <div className="section margin-top-0 gc-centered-content">
         <div className="principal-title aliances" >{t("partners")}</div>
         <div className="wrapper">
             <div><img src= "/img/koga-impact-lab.png" alt="koga impact lab" /></div>
