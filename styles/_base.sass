@@ -27,8 +27,27 @@
   line-height: 33px
   text-align: right
 
+.gc-page
+  color: $gc-purple
+
+  font-style: normal
+  text-align: left
+
+  &-title
+    @extend .gc-page
+    font-family: Geomanist
+    color: $gc-purple-invert
+    font-size: 61px
+    line-height: 63px
+  
+  &-subtitle
+    @extend .gc-page
+    font-family: geomanistregular
+    font-size: 20px
+    line-height: 30px
+
 .gc-subtitle
-  color: $gc-purple !important
+  color: $gc-purple
   text-transform: uppercase
   font-family: Geomanist
   font-style: normal
@@ -44,6 +63,12 @@
 
 .gc-pink
   color: $gc-purple
+
+.gc-purple
+  color: $gc-purple
+
+.gc-purple-invert
+  color: $gc-purple-invert
 
 .gc-yellow
   color: $gc-yellow

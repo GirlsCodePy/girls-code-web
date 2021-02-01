@@ -3,12 +3,12 @@ import Container from "../Container";
 import { useSpring, animated } from "react-spring";
 import "./style.sass";
 
-const Carousel = ({ children, length, ...props }) => {
+const Carousel = ({ children, length, carouselContainerClassName, dotClassName, right, ...props }) => {
   const [aProps, set] = useSpring(() => ({ marginLeft: "0%" }));
 
   return (
     <section clasName="hero" {...props}>
-      <div className="carousel-container">
+      <div className={carouselContainerClassName || "carousel-container-workshops"}>
         <Container>
           <div className="carousel-clip">
             <animated.div
@@ -20,14 +20,16 @@ const Carousel = ({ children, length, ...props }) => {
             >
               {children}
             </animated.div>
-            <div className="separator-2" />
-            <div className="carousel-dots">
-              {Array.from(Array(length).keys()).map((i, index) => (
-                <div
-                  className="carousel-dot"
-                  onClick={() => set({ marginLeft: `-${index * 100}%` })}
-                />
-              ))}
+          <div className="separator-2" />
+            <div className={right ? "carousel-dots-container-right" : "carousel-dots-container-left"}>
+              <div className="carousel-dots">
+                {Array.from(Array(length).keys()).map((i, index) => (
+                  <div
+                    className={`carousel-dot ${dotClassName}`}
+                    onClick={() => set({ marginLeft: `-${index * 100}%` })}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </Container>
