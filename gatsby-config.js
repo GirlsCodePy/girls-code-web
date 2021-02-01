@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Girls Code Web Using Gatsby + Netlify CMS',
+    title: 'Girls Code - Nosotras Creemos Ellas Hacen',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Girls Code - Nosotras Creemos Ellas Hacen - Buscamos la inclusión digital de mujeres en las áreas de STEAM en todo Paraguay con espacios de aprendizaje en base a nuestros valores',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
