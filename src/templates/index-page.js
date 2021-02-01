@@ -13,6 +13,9 @@ import WhoWeAre from "../components/WhoWeAre";
 import WhatWeDo from "../components/WhatWeDo";
 import Partner from "../components/Partner";
 
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 export const IndexPageTemplate = ({
   heading,
@@ -20,6 +23,7 @@ export const IndexPageTemplate = ({
   description,
 }) => (
   <div>
+    <ToastContainer/>
     <SplitBanner />
     <WhoWeAre
       title={mainpitch.title}
@@ -50,7 +54,7 @@ export const IndexPageTemplate = ({
                   buttonLabel="writeUs"
                   buttonLink="/contact"
                 />
-                
+
               </div>
             </div>
           </div>
