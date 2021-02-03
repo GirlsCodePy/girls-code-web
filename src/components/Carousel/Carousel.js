@@ -7,7 +7,7 @@ const Carousel = ({ children, length, carouselContainerClassName, dotClassName, 
   const [aProps, set] = useSpring(() => ({ marginLeft: "0%" }));
 
   return (
-    <section clasName="hero" {...props}>
+    <section className="hero" {...props}>
       <div className={carouselContainerClassName || "carousel-container-workshops"}>
         <Container>
           <div className="carousel-clip">

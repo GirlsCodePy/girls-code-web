@@ -34,5 +34,62 @@ mission:
     showMore:
         link: /team
         label_es: Equipo
-        label_en: Team
+        label_en: Team        
+subtitle_es: Valores
+subtitle_en: Values
+values:
+    - imageInfo:
+          alt: altruism
+          image: /img/heart.png
+      title_es: Altruísmo
+      title_en: Altruism
+      description_es: > 
+          Trabajamos por algo mas grande que nosotras mismas.
+      description_en: >
+          We work for something bigger than ourselves.
+    - imageInfo:
+          alt: commitment
+          image: /img/clock.png
+      title_es: Compromiso Responsable
+      title_en: Liable Commitment
+      description_es: > 
+          Asumimos el compromiso y lo llevamos a cabo.
+      description_en: >
+          We assume the commitment and we carry it out.
+    - imageInfo:
+          alt: leadership
+          image: /img/beam.png
+      title_es: Liderazgo Representativo
+      title_en: Representative Leadership
+      description_es: > 
+          Generamos impacto con nuestras acciones e identidades.
+      description_en: >
+          We make an impact with our actions and identities.
+    - imageInfo:
+          alt: assertiveness
+          image: /img/comment.png
+      title_es: Asertividad
+      title_en: Assertiveness
+      description_es: > 
+          Comunicación efectiva.
+      description_en: >
+          Effective communication.
+    - imageInfo:
+          alt: resilience
+          image: /img/circle_panel.png
+      title_es: Resiliencia
+      title_en: Resilience
+      description_es: > 
+          Orientadas al crecimiento.
+      description_en: >
+          Growth oriented.
+    - imageInfo:
+          alt: integrity
+          image: /img/filled_square.png
+      title_es: Integridad
+      title_en: Integrity
+      description_es: > 
+          Somos transparentes en nuestras acciones.
+      description_en: >
+          We are transparent in our actions.
 ---
