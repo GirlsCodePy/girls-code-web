@@ -54,6 +54,25 @@ Se levanta el proyecto localmente en http://localhost:8000/
 
 ```
 
+## Trabajar con un repositorio local de Netlify
+
+Agregar al principio del archivo de configuración `local_backend` en el config.yml
+
+```
+backend:
+  name: ...
+
+# when using the default proxy server port
+local_backend: true
+```
+
+2. Ejecutar `npx netlify-cms-proxy-server` desde el directorio principal
+3. En otra terminal, levantar el servidor local: `yarn start`
+4. Abrir http://localhost:8081/admin/ para verificar que puedes administrar tu contenido de Netlify localmente
+
+Nota: `netlify-cms-proxy-server` ejecuta un servidor express no autenticado. SOLAMENTE debe ser utilizado localmente!!
+
+
 ## 🤝 Licencia
 
 Este proyecto está licenciado bajo los términos de la Licencia Pública General GNU v3.0 - vea el archivo [LICENSE](./LICENSE) para más detalles
