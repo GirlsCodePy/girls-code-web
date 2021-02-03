@@ -219,6 +219,36 @@ collections:
                 }
               ],
           }
+          - {
+            label: "Valores",
+            name: values,
+            widget: list,
+            fields:
+              [
+                {
+                  label: "Image info",
+                  name: imageInfo,
+                  widget: object,
+                  fields:
+                    [
+                      { label: Image, name: image, widget: image },
+                      { label: Alt, name: alt, widget: string },
+                    ],
+                },
+                { label: "Título Español", name: title_es, widget: string },
+                { label: "Título Inglés", name: title_en, widget: string },
+                {
+                  label: "Descripción Español",
+                  name: description_es,
+                  widget: text,
+                },
+                {
+                  label: "Descripción Inglés",
+                  name: description_en,
+                  widget: text,
+                },
+              ],
+          }
       - file: "src/pages/team/index.md"
         label: "Team"
         name: "team"

@@ -12,6 +12,8 @@ const AboutPagePreview = ({ entry }) => {
         title={translatedData.title}
         vision={translatedData.vision}
         mission={translatedData.mission}
+        subtitle={translatedData.subtitle}
+        values={translatedData.values}
     />
   }
 

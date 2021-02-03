@@ -7,42 +7,68 @@ import ShowMore from "../components/ShowMore";
 import {useTranslatedData} from "../utils";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 
-export const AboutPageTemplate = ({ title, vision, mission }) => {
-
+export const AboutPageTemplate = ({ title, vision, mission, subtitle, values }) => {
   return (
-    <section className="section section--gradient">
-      <Container>
-        <div className="columns is-multiline">
-          <div className="column is-12">
-            <h1 className="principal-title-purple mb-6">{title}</h1>
-          </div>
-        </div>
-        <div className="columns is-flex-direction-column">
-          <div className="column is-6 is-align-self-flex-start">
-            <div className="is-justify-content-flex-start mb-5">
-              <div className="mb-5">
-                <PreviewCompatibleImage imageInfo={vision.imageInfo} />
+    <div className="is-yellow-cream">
+      <section className="section section--gradient clip-about-values">
+          <Container>
+            <div className="columns is-multiline">
+              <div className="column is-12">
+                <h1 className="principal-title-purple mb-6">{title}</h1>
               </div>
-              <h2 className="gc-subtitle mb-3">{vision.title}</h2>
-              <p className="title-content" >{vision.description}</p>
+            </div>
+            <div className="columns is-flex-direction-column">
+              <div className="column is-6 is-align-self-flex-start">
+                <div className="is-justify-content-flex-start mb-5">
+                  <div className="mb-5">
+                    <PreviewCompatibleImage imageInfo={vision.imageInfo} />
+                  </div>
+                  <h2 className="gc-subtitle mb-3">{vision.title}</h2>
+                  <p className="title-content" >{vision.description}</p>
+                </div>
+              </div>
+              <div className="column is-6 is-align-self-flex-end">
+                <div className="has-text-right">
+                  <div className="mb-5">
+                    <PreviewCompatibleImage imageInfo={mission.imageInfo} />
+                  </div>
+                  <h4 className="gc-subtitle mb-3">{mission.title}</h4>
+                  <p className="title-content mb-5" >{mission.description}</p>
+                  <ShowMore
+                      link={mission.showMore.link}
+                      label={mission.showMore.label}
+                  />
+                </div>
+              </div>
+            </div>
+          </Container>
+      </section>
+      <section className="section section--gradient">
+        <Container>
+          <div className="columns is-multiline">
+            <div className="column is-12">
+              <h1 className="principal-title-purple mb-6">{subtitle}</h1>
             </div>
           </div>
-          <div className="column is-6 is-align-self-flex-end">
-            <div className="has-text-right">
-              <div className="mb-5">
-                <PreviewCompatibleImage imageInfo={mission.imageInfo} />
-              </div>
-              <h4 className="gc-subtitle mb-3">{mission.title}</h4>
-              <p className="title-content mb-5" >{mission.description}</p>
-              <ShowMore
-                  link={mission.showMore.link}
-                  label={mission.showMore.label}
-              />
-            </div>
+          <div className="columns is-flex-direction-row is-multiline">
+            {values.map((item) => {
+              const {image, alt} = item.imageInfo;
+              return (
+                <div className="column is-4">
+                  <div className="is-fixed-column">
+                    <div className="mb-5">
+                      <img src={image.childImageSharp ? image.childImageSharp.fluid.src : image} alt={alt} />
+                    </div>
+                    <h2 className="gc-subtitle mb-3">{item.title}</h2>
+                    <p className="title-content-purple mb-5" >{item.description}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-        </div>
-      </Container>
-    </section>
+        </Container>
+      </section>
+    </div>
   )
 }
 
@@ -62,6 +88,8 @@ const AboutPage = ({ data }) => {
         title={frontmatter.title}
         vision={frontmatter.vision}
         mission={frontmatter.mission}
+        subtitle={frontmatter.subtitle}
+        values={frontmatter.values}
       />
     </Layout>
   )
@@ -123,6 +151,24 @@ export const aboutPageQuery = graphql`
             label_es
             link
           }
+        }
+        subtitle_en
+        subtitle_es
+        values {
+          imageInfo {
+            alt
+            image {
+              childImageSharp {
+                fluid(maxWidth: 70, quality: 92) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          title_en
+          title_es
+          description_en
+          description_es
         }
       }
     }
