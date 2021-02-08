@@ -5,10 +5,8 @@ import {graphql } from "gatsby";
 import Layout from "../components/Layout";
 import FlowerLogo from "../img/flower.svg";
 import WriteUs from "../img/writeUs.svg";
-import "../i18n";
 import Encourage from "../components/Encourage";
 import SplitBanner from "../components/SplitBanner";
-import {useTranslatedData} from "../utils";
 import WhoWeAre from "../components/WhoWeAre";
 import WhatWeDo from "../components/WhatWeDo";
 import Partner from "../components/Partner";
@@ -16,6 +14,7 @@ import Partner from "../components/Partner";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
+import {useTranslatedData} from "../utils";
 
 export const IndexPageTemplate = ({
   heading,
