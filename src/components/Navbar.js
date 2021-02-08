@@ -3,8 +3,6 @@ import { Link } from "gatsby";
 import "../components/SplitBanner/styles.sass";
 import GirlsCodeLogoPurple from "../components/GirlsCodeLogoPurple";
 
-const NAV_ELEMENTS_HEIGHT = 50;
-const VERTICAL_OFFSET = 63;
 
 const Navbar = class extends React.Component {
   constructor(props) {
