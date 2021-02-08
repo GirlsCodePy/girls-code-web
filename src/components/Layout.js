@@ -4,6 +4,8 @@ import Footer from '../components/Footer'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
 
+import "../i18n";
+
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
