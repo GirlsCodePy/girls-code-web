@@ -6,6 +6,14 @@
   width: 100%
   height: 100vh
 
+.split-navbar-container
+  display: flex
+  flex-direction: row
+  width: 100%
+  height: 24vh
+  padding-left: 10rem
+  padding-right: 10rem
+
 $split-vertical-offset: 63px
 
 .split-section-left
@@ -15,6 +23,14 @@ $split-vertical-offset: 63px
   position: relative
   bottom: $split-vertical-offset
   zIndex: 10
+
+.split-navbar-left
+  display: flex
+  flex: 1
+  position: relative
+  bottom: $split-vertical-offset
+  zIndex: 10
+
 
 .split-left-content
   display: flex
@@ -56,6 +72,14 @@ $split-vertical-offset: 63px
   flex: 1
   display: flex
   background: $gc-yellow
+  border-bottom-left-radius: 63px
+  align-items: center
+  justify-content: center
+  position: relative
+
+.split-navbar-right
+  flex: 1
+  display: flex
   border-bottom-left-radius: 63px
   align-items: center
   justify-content: center

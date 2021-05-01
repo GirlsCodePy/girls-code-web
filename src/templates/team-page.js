@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import TeamMember from "../components/TeamMember"
 import Container from "../components/Container"
+import Navbar from "../components/Navbar"
 import { graphql } from "gatsby"
 
 const TeamPageTemplate = ({ title, members }) => (
@@ -24,6 +25,10 @@ const TeamPage = ({ data }) => {
 
   return (
     <Layout>
+       <div>
+        <Navbar/> 
+      </div>
+  
       <TeamPageTemplate
         title={frontmatter.title}
         members={frontmatter.members}
