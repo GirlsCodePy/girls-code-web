@@ -3,11 +3,13 @@ import React from "react";
 import Container from "../components/Container";
 import Layout from "../components/Layout";
 import Carousel from "../components/Carousel";
+import CustomNavbar from "../components/CustomNavbar"
 
 const ActivitiesPageTemplate = ({ title, subtitle, workshops, courses, mentoring }) => {
   return (
     <>
       <Container>
+        <CustomNavbar/> 
         <div className="columns is-multiline">
           <div className="column is-12">
             <h1 className="gc-page-title">{title}</h1>

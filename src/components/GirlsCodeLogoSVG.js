@@ -1,10 +1,10 @@
 import React from "react";
 
-const GirlsCodeLogoPurple = () => (
+const GirlsCodeLogoSVG = ({width = 147, height = 19, fill = '#CA00CA'}) => (
   <svg
-    width="147px"
-    height="19px"
-    viewBox="0 0 147 19"
+    width={`${width}px`}
+    height={`${height}px`}
+    viewBox={`0 0 ${width} ${height}`}
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
   >
@@ -18,7 +18,7 @@ const GirlsCodeLogoPurple = () => (
       <g
         id="Equipo"
         transform="translate(-256.000000, -57.000000)"
-        fill="#CA00CA"
+        fill={`${fill}`}
       >
         <g id="Menu" transform="translate(256.000000, 56.000000)">
           <g id="Group-21" transform="translate(0.000000, 1.000000)">
@@ -65,4 +65,4 @@ const GirlsCodeLogoPurple = () => (
   </svg>
 );
 
-export default GirlsCodeLogoPurple;
+export default GirlsCodeLogoSVG;

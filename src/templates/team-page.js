@@ -2,11 +2,13 @@ import React from "react"
 import Layout from "../components/Layout"
 import TeamMember from "../components/TeamMember"
 import Container from "../components/Container"
-import Navbar from "../components/Navbar"
+import CustomNavbar from "../components/CustomNavbar"
 import { graphql } from "gatsby"
 
 const TeamPageTemplate = ({ title, members }) => (
   <Container>
+    <CustomNavbar/> 
+    
     <div className="columns is-multiline">
       <div className="column is-12">
         <h1 className="principal-title-purple">{title}</h1>
@@ -25,10 +27,6 @@ const TeamPage = ({ data }) => {
 
   return (
     <Layout>
-       <div>
-        <Navbar/> 
-      </div>
-  
       <TeamPageTemplate
         title={frontmatter.title}
         members={frontmatter.members}

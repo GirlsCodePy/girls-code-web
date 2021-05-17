@@ -68,13 +68,28 @@ $split-vertical-offset: 63px
   position: absolute
   right: 0px
 
+
++mobile
+  .split-left-triangle
+    border-width: 0px 120px 60vh 0px
+  .split-label-white,
+  .split-label-accent
+    font-size: 45px
+    line-height: 50px
+  .split-left-content
+    padding-left: 60px
+  .split-section-left
+    bottom: 0
+
 .split-section-right
   flex: 1
   display: flex
   background: $gc-yellow
+  min-width: 50px
   border-bottom-left-radius: 63px
   align-items: center
-  justify-content: center
+  justify-content: flex-end
+  padding-right: 9rem
   position: relative
 
 .split-navbar-right
@@ -87,15 +102,15 @@ $split-vertical-offset: 63px
 
 .split-right-img-container
   padding-left: 10px
-  padding-right: 90px
+  
+.split-right-empty-container
+  min-width: 50px
+  background-color: red
+  flex: 1
+  display: flex
 
-.navbar-item
-  margin-right: 60px
-  font-family: Roboto
-  font-style: normal
-  font-weight: normal
-  font-size: 16px
-  color: #E000D1
+
+
 
 a
   &:hover 

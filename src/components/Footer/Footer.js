@@ -130,7 +130,7 @@ const Footer = ({t}) => (
           </div>
         </div>
         <div className="content has-text-right copyright">
-          <p className="text">© 2020 #GirlsCode All rights reserved</p>
+          <p className="text">© 2021 #GirlsCode All rights reserved</p>
           <img
               src={logo}
               alt="girlscode"
@@ -142,4 +142,4 @@ const Footer = ({t}) => (
     </footer>
 );
 
-export default withTranslation()(Footer)
+export default withTranslation()(Footer);

@@ -6,18 +6,20 @@ import Container from "../components/Container";
 import ShowMore from "../components/ShowMore";
 import {useTranslatedData} from "../utils";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import CustomNavbar from "../components/CustomNavbar"
 
 export const AboutPageTemplate = ({ title, vision, mission, subtitle, values }) => {
   return (
     <div className="is-yellow-cream">
       <section className="section section--gradient clip-about-values">
           <Container>
+            <CustomNavbar/> 
             <div className="columns is-multiline">
               <div className="column is-12">
                 <h1 className="principal-title-purple mb-6">{title}</h1>
               </div>
             </div>
-            <div className="columns is-flex-direction-column">
+            <div className="columns is-flex-direction-column margin-circled-area">
               <div className="column is-6 is-align-self-flex-start">
                 <div className="is-justify-content-flex-start mb-5">
                   <div className="mb-5">
