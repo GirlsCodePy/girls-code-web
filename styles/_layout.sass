@@ -23,5 +23,149 @@
     margin-bottom: 1.5rem
     margin-top: 0
 
+
+.gatsby-focus-wrapper
+  overflow: hidden
+
 .flex
   display: flex
+
+.section 
+  padding: 1.5rem 1.5rem 3rem 1.5rem 
+
+
+@media screen and (min-width: 1024px)
+  .section.is-medium
+    padding: 4rem 1.5rem 9rem 1.5rem 
+  
+  .section.is-large
+    padding: 9rem 1.5rem 18rem 1.5rem 
+
+
+.navbar-item.logo
+  margin: 0
+  padding: 0
+
+
+.navbar
+  padding-bottom: 9rem
+
+.navbar-link
+  color: $gc-purple-text
+
+.navbar-item
+  margin-left: 2rem
+  font-family: Roboto
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  color: $gc-purple-text
+
+.select:not(.is-multiple):not(.is-loading)::after
+  border-color: $gc-purple-text
+
+.main-navbar
+  position: absolute
+  top: 30px
+  background-color: transparent
+  .navbar-item.has-dropdown.is-active .navbar-dropdown
+    background-color: $gc-yellow
+    border-radius: 8px
+  width: 100%
+  padding-left: 90px
+  &.navbar-open
+    top: 0px
+    .navbar-menu
+      position: absolute
+      left: 0px
+      top: 0px
+      padding-top: 50px
+      padding-bottom: 100%
+      z-index: 1
+      width: 100%
+      padding-left: 0px
+      padding-right: 15px
+  .navbar-item:hover,
+  .navbar-link:hover,
+  .navbar-item.has-dropdown:focus .navbar-link,
+  .navbar-item.has-dropdown:hover .navbar-link,
+  a.navbar-item:focus-within,
+  .navbar-item.has-dropdown.is-active .navbar-link
+    color: $gc-purple-text
+  .navbar-item,
+    color: $gc-purple-invert
+  .navbar-link
+    color: $gc-purple-invert
+  .navbar-item.has-dropdown:focus .navbar-link,
+  .navbar-item.has-dropdown:hover .navbar-link,
+  .navbar-item.has-dropdown.is-active .navbar-link,
+  a.navbar-item:focus-within
+    background-color: #0000000d
+    border-radius: 8px
+  .navbar-burger
+    z-index: 2
+    span
+      background-color: $gc-purple-invert
+  .navbar-lang
+    select,
+    select:active,
+    select:focus
+      color: $gc-purple-invert !important
+      &:hover
+        color: $gc-dark-purple !important
+  .select:not(.is-multiple):not(.is-loading)::after
+    border-color: $gc-purple-invert
+
+.navbar-lang
+  select,
+  select:active,
+  select:focus
+    color: $gc-purple-text !important
+    background-color: transparent
+    border-color: transparent
+    border-radius: 4px
+    box-shadow: none
+    &:hover
+      color: $gc-purple-invert !important
+
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+.navbar-link.is-active,
+.navbar-dropdown a.navbar-item:hover
+  background-color: #fafafadd
+  color: $gc-purple-invert
+
++mobile
+  .main-navbar
+    padding-left: 60px
+    padding-right: 15px
+    .navbar-menu
+      background-color: $gc-yellow
+
++desktop
+  .main-navbar
+    padding-right: 9rem
+
+.navbar-dropdown.is-boxed
+  margin-top: 8px
+
+.navbar-menu
+  border-radius: 8px
+
+.navbar-burger span
+  height: 2px
+  width: 20px
+  border-radius: 4px
+  background-color: $gc-purple-text
+
+.gc-form .label:not(:last-child)
+  margin-right: 0rem
+
++desktop
+  .margin-circled-area
+    margin-bottom: 240px !important

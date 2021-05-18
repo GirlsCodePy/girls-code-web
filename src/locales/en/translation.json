@@ -1,6 +1,5 @@
 {
   "home": "Home",
-  "about": "About",
   "team": "Team",
   "activities": "Activities",
   "resources": "Resources",
@@ -22,6 +21,8 @@
   "email": "Email",
   "subscribeMe": "Subscribe me",
   "whatWeDo":"What we Do",
+  "us": "Us",
+  "about":"Who we are",
   "courses": "Courses",
   "workshops": "Workshops",
   "mentorship": "Mentorship",
@@ -29,5 +30,7 @@
   "subscriptionSuccess": "Thanks for subscribing!",
   "subscriptionError": "An error occurred while submitting the form :( Please, try again in a few minutes.",
   "vision": "Vision",
-  "mission": "Mission"
+  "mission": "Mission",
+  "homePhraseWhite": "We believe",
+  "homePhraseAccent": "And they make it up"
 }
