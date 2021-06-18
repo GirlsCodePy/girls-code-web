@@ -10,8 +10,8 @@ export const WhatWeDo = ({t}) => (
     <div className="has-text-centered">
       <h1 className="principal-title separation">{t("whatWeDo")}</h1>
     </div>
-    <div className="columns columns-centered">
-      <div className="column">
+    <div className="columns-centered is-mobile scrolling-wrapper">
+      <div className="scrolling-column column">
         <div className="box flex-box">
           <img
             src={talleres}
@@ -21,7 +21,7 @@ export const WhatWeDo = ({t}) => (
           <div className="box-text">{t("workshops")}</div>
         </div>
       </div>
-      <div className="column">
+      <div className="scrolling-column column">
         <div className="box flex-box">
           <img
             src={cursos}
@@ -31,7 +31,7 @@ export const WhatWeDo = ({t}) => (
           <div className="box-text">{t("courses")}</div>
         </div>
       </div>
-      <div className="column">
+      <div className="scrolling-column column">
         <div className="box flex-box">
           <img
             src={mentorias}

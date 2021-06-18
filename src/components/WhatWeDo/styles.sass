@@ -4,14 +4,16 @@
   display: flex
   flex-direction: column
   width: 100%
-  height: 100vh
+  margin-bottom: 3rem
+
 .separation
   padding-top: 10rem
   padding-bottom: 5rem
 
-.columns-centered
-  padding-right: 10rem
-  padding-left: 10rem
++mobile
+  .columns-centered
+    padding-right: 5rem
+    padding-left: 5rem
 
 .flex-box
   display: flex
@@ -35,8 +37,10 @@
   height: 8rem
   width: 8rem
 
-@media screen and (min-width: 1025px)  
++desktop
   .columns-centered 
+    align-items: center
+    justify-content: center
     padding-right: 15rem;
     padding-left: 15rem;
   
