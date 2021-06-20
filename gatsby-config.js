@@ -1,12 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: 'Girls Code Web Using Gatsby + Netlify CMS',
+    title: 'Girls Code - Nosotras Creemos Ellas Hacen',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Girls Code - Nosotras Creemos Ellas Hacen - Buscamos la inclusión digital de mujeres en las áreas de STEAM en todo Paraguay con espacios de aprendizaje en base a nuestros valores',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sass',
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        data: '@import "variables.sass";',
+        includePaths: [
+          'styles',
+        ],
+      },
+    },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
@@ -81,6 +89,18 @@ module.exports = {
         purgeOnly: ['/all.sass'], // applies purging only on the bulma css file
       },
     }, // must be after other CSS plugins
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|cache|public)/,
+        stages: ['develop'],
+        options: {
+          emitWarning: true,
+          failOnError: false
+        }
+      }
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

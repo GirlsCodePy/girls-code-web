@@ -1,27 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import {graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
 import FlowerLogo from "../img/flower.svg";
 import WriteUs from "../img/writeUs.svg";
-import "../i18n";
 import Encourage from "../components/Encourage";
 import SplitBanner from "../components/SplitBanner";
-import {useTranslatedData} from "../utils";
 import WhoWeAre from "../components/WhoWeAre";
+import WhatWeDo from "../components/WhatWeDo";
+import Partner from "../components/Partner";
+
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import {useTranslatedData} from "../utils";
 
 export const IndexPageTemplate = ({
-  image,
-  title,
   heading,
   mainpitch,
   description,
-  intro,
 }) => (
   <div>
+    <ToastContainer/>
     <SplitBanner />
     <WhoWeAre
       title={mainpitch.title}
@@ -30,13 +31,15 @@ export const IndexPageTemplate = ({
       link={mainpitch.link}
       label={mainpitch.label}
     />
+    <WhatWeDo />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <Encourage 
+                <Partner />
+                <Encourage
                   image={FlowerLogo}
                   title="wantCollaborate"
                   subtitle="supportUs"
@@ -50,33 +53,7 @@ export const IndexPageTemplate = ({
                   buttonLabel="writeUs"
                   buttonLink="/contact"
                 />
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                {/* <Features gridItems={intro.blurbs} /> */}
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
-                  </h3>
-                  {/* <BlogRoll /> */}
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -137,7 +114,6 @@ export const pageQuery = graphql`
             }
           }
         }
-        heading
         mainpitch {
           title_en
           title_es
@@ -148,20 +124,6 @@ export const pageQuery = graphql`
           label
         }
         description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-          description
-        }
       }
     }
   }
