@@ -1,6 +1,5 @@
 {
   "home": "Inicio",
-  "about": "Sobre",
   "team": "Equipo",
   "activities": "Actividades",
   "resources": "Recursos",
@@ -22,6 +21,8 @@
   "email": "Correo",
   "subscribeMe": "Subscribirme",
   "whatWeDo":"Qué Hacemos",
+  "us": "Nosotras",
+  "about":"Quiénes Somos",
   "courses": "Cursos",
   "workshops": "Talleres",
   "mentorship": "Mentorías",
@@ -29,5 +30,7 @@
   "subscriptionSuccess": "Gracias por subscribirte!",
   "subscriptionError": "Ocurrió un error al enviar el formulario :( Por favor, intentá de vuelta en unos minutos.",
   "vision": "Visión",
-  "mission": "Misión"
+  "mission": "Misión",
+  "homePhraseWhite": "Nosotras creemos",
+  "homePhraseAccent": "Ellas crean"
 }
