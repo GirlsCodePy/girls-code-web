@@ -52,7 +52,7 @@ export const AboutPageTemplate = ({ title, vision, mission, subtitle, values }) 
               <h1 className="principal-title-purple mb-6">{subtitle}</h1>
             </div>
           </div>
-          <div className="columns is-flex-direction-row is-multiline">
+          <div className="columns is-flex-direction-row is-multiline is-mobile">
             {values.map((item) => {
               const {image, alt} = item.imageInfo;
               return (

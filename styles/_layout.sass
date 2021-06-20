@@ -141,6 +141,11 @@ a.navbar-item.is-active,
   color: $gc-purple-invert
 
 +mobile
+  body
+    scrollbar-width: none
+  body::-webkit-scrollbar
+    display: none
+
   .main-navbar
     padding-left: 60px
     padding-right: 15px
@@ -169,3 +174,35 @@ a.navbar-item.is-active,
 +desktop
   .margin-circled-area
     margin-bottom: 240px !important
+
+.scrolling-wrapper 
+  display: flex
+  flex-wrap: nowrap
+  overflow-x: auto
+
+  .scrolling-column
+    flex: 0 0 auto
+
+.section-whoweare
+  display: flex
+
++mobile
+  .section-whoweare
+    flex-direction: column
+    margin-right: 1.5rem
+    margin-left: 1.5rem
+    .photo-whoweare
+      margin-left: -1.5rem
+      margin-bottom: 6rem
+      width: 100%
+      margin-top: 2rem
+
++desktop
+  .section-whoweare
+    flex-direction: row
+    margin-right: 11.5rem
+    margin-top: 9rem
+    div
+      margin-top: 5rem
+    .photo-whoweare
+      width: 65%

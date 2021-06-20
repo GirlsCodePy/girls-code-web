@@ -28,7 +28,8 @@ const Encourage = class extends Component {
           </h1>
           <p className="gc-pink-text">{t(this.props.subtitle)}</p>
           <div style={{
-            width: "20%",
+            paddingLeft: 10,
+            paddingRight: 10,
             display: "inline-block" }}>
               <GCLink link={this.props.buttonLink}>
                 <button 
