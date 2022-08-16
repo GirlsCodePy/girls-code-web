@@ -20,9 +20,10 @@
   "lastName": "Lastname",
   "email": "Email",
   "subscribeMe": "Subscribe me",
-  "whatWeDo":"What we Do",
+  "whatWeDo": "What we Do",
+  "testimonies": "Testimonies",
   "us": "Us",
-  "about":"Who we are",
+  "about": "Who we are",
   "courses": "Courses",
   "workshops": "Workshops",
   "mentorship": "Mentorship",
@@ -31,6 +32,6 @@
   "subscriptionError": "An error occurred while submitting the form :( Please, try again in a few minutes.",
   "vision": "Vision",
   "mission": "Mission",
-  "homePhraseWhite": "We believe",
-  "homePhraseAccent": "And they make it up"
+  "homePhraseWhite": "They create",
+  "homePhraseAccent": "If we believe in them"
 }

@@ -2,51 +2,51 @@ backend:
   name: git-gateway
   branch: master
   commit_messages:
-    create: "Create {{collection}} “{{slug}}”"
-    update: "Update {{collection}} “{{slug}}”"
-    delete: "Delete {{collection}} “{{slug}}”"
-    uploadMedia: "[skip ci] Upload “{{path}}”"
-    deleteMedia: "[skip ci] Delete “{{path}}”"
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
 
 # when using the default proxy server port
-#local_backend: true
+# local_backend: true
 
 media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: 'blog'
+    label: 'Blog'
+    folder: 'src/pages/blog'
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "blog-post",
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'blog-post',
         }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
-      - { label: "Featured Image", name: "featuredimage", widget: image }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Featured Post', name: 'featuredpost', widget: 'boolean' }
+      - { label: 'Featured Image', name: 'featuredimage', widget: image }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Tags', name: 'tags', widget: 'list' }
 
-  - name: "pages"
-    label: "Pages"
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - file: "src/pages/index.md"
-        label: "Landing Page"
-        name: "index"
+      - file: 'src/pages/index.md'
+        label: 'Landing Page'
+        name: 'index'
         fields:
           - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index-page",
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'index-page',
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
@@ -77,23 +77,15 @@ collections:
             }
           - { label: Description, name: description, widget: string }
           - {
-              label: Intro,
-              name: intro,
-              widget: object,
+              label: Testimonies,
+              name: testimonies,
+              widget: list,
               fields:
                 [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
+                  { label: Quote Español, name: quote_es, widget: string },
+                  { label: Quote Ingles, name: quote_en, widget: string },
+                  { label: Author Español, name: author_es, widget: string },
+                  { label: Author Ingles, name: author_en, widget: string },
                 ],
             }
           - {
@@ -136,126 +128,134 @@ collections:
                   },
                 ],
             }
-      - file: "src/pages/about/index.md"
-        label: "About"
-        name: "about"
+      - file: 'src/pages/about/index.md'
+        label: 'About'
+        name: 'about'
         fields:
           - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "about-page",
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'about-page',
             }
-          - { label: "Título Español", name: title_es, widget: string }
-          - { label: "Título Inglés", name: title_en, widget: string }
+          - { label: 'Título Español', name: title_es, widget: string }
+          - { label: 'Título Inglés', name: title_en, widget: string }
           - {
-            label: "Visión",
-            name: "vision",
-            widget: object,
-            fields:
-              [
-                { label: "Título Español", name: title_es, widget: string },
-                { label: "Título Inglés", name: title_en, widget: string },
-                {
-                  label: "Descripción Español",
-                  name: description_es,
-                  widget: text,
-                },
-                {
-                  label: "Descripción Inglés",
-                  name: description_en,
-                  widget: text,
-                },
-                {
-                  label: "Image info",
-                  name: imageInfo,
-                  widget: object,
-                  fields:
-                    [
-                      { label: Image, name: image, widget: image },
-                      { label: Alt, name: alt, widget: string },
-                    ],
-                },
-              ],
-          }
+              label: 'Visión',
+              name: 'vision',
+              widget: object,
+              fields:
+                [
+                  { label: 'Título Español', name: title_es, widget: string },
+                  { label: 'Título Inglés', name: title_en, widget: string },
+                  {
+                    label: 'Descripción Español',
+                    name: description_es,
+                    widget: text,
+                  },
+                  {
+                    label: 'Descripción Inglés',
+                    name: description_en,
+                    widget: text,
+                  },
+                  {
+                    label: 'Image info',
+                    name: imageInfo,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                ],
+            }
           - {
-            label: "Misión",
-            name: "mission",
-            widget: object,
-            fields:
-              [
-                { label: "Título Español", name: title_es, widget: string },
-                { label: "Título Inglés", name: title_en, widget: string },
-                {
-                  label: "Descripción Español",
-                  name: description_es,
-                  widget: text,
-                },
-                {
-                  label: "Descripción Inglés",
-                  name: description_en,
-                  widget: text,
-                },
-                {
-                  label: "Image info",
-                  name: imageInfo,
-                  widget: object,
-                  fields:
-                    [
-                      { label: Image, name: image, widget: image },
-                      { label: Alt, name: alt, widget: string },
-                    ],
-                },
-                {
-                  label: "Ver más",
-                  name: "showMore",
-                  widget: object,
-                  fields:
-                    [
-                      { label: "Etiqueta Español", name: label_es, widget: string },
-                      { label: "Etiqueta Inglés", name: label_en, widget: string },
-                      { label: "Link", name: "link", widget: text },
-                    ],
-                }
-              ],
-          }
+              label: 'Misión',
+              name: 'mission',
+              widget: object,
+              fields:
+                [
+                  { label: 'Título Español', name: title_es, widget: string },
+                  { label: 'Título Inglés', name: title_en, widget: string },
+                  {
+                    label: 'Descripción Español',
+                    name: description_es,
+                    widget: text,
+                  },
+                  {
+                    label: 'Descripción Inglés',
+                    name: description_en,
+                    widget: text,
+                  },
+                  {
+                    label: 'Image info',
+                    name: imageInfo,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: 'Ver más',
+                    name: 'showMore',
+                    widget: object,
+                    fields:
+                      [
+                        {
+                          label: 'Etiqueta Español',
+                          name: label_es,
+                          widget: string,
+                        },
+                        {
+                          label: 'Etiqueta Inglés',
+                          name: label_en,
+                          widget: string,
+                        },
+                        { label: 'Link', name: 'link', widget: text },
+                      ],
+                  },
+                ],
+            }
           - {
-            label: "Valores",
-            name: values,
-            widget: list,
-            fields:
-              [
-                {
-                  label: "Image info",
-                  name: imageInfo,
-                  widget: object,
-                  fields:
-                    [
-                      { label: Image, name: image, widget: image },
-                      { label: Alt, name: alt, widget: string },
-                    ],
-                },
-                { label: "Título Español", name: title_es, widget: string },
-                { label: "Título Inglés", name: title_en, widget: string },
-                {
-                  label: "Descripción Español",
-                  name: description_es,
-                  widget: text,
-                },
-                {
-                  label: "Descripción Inglés",
-                  name: description_en,
-                  widget: text,
-                },
-              ],
-          }
-      - file: "src/pages/team/index.md"
-        label: "Team"
-        name: "team"
+              label: 'Valores',
+              name: values,
+              widget: list,
+              fields:
+                [
+                  {
+                    label: 'Image info',
+                    name: imageInfo,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  { label: 'Título Español', name: title_es, widget: string },
+                  { label: 'Título Inglés', name: title_en, widget: string },
+                  {
+                    label: 'Descripción Español',
+                    name: description_es,
+                    widget: text,
+                  },
+                  {
+                    label: 'Descripción Inglés',
+                    name: description_en,
+                    widget: text,
+                  },
+                ],
+            }
+      - file: 'src/pages/team/index.md'
+        label: 'Team'
+        name: 'team'
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: 'Title', name: 'title', widget: 'string' }
           - {
-              label: "Members",
+              label: 'Members',
               name: members,
               widget: list,
               fields:
@@ -265,15 +265,15 @@ collections:
                   { label: Image, name: image, widget: image },
                 ],
             }
-      - file: "src/pages/products/index.md"
-        label: "Products Page"
-        name: "products"
+      - file: 'src/pages/products/index.md'
+        label: 'Products Page'
+        name: 'products'
         fields:
           - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "product-page",
+              label: 'Template Key',
+              name: 'templateKey',
+              widget: 'hidden',
+              default: 'product-page',
             }
           - { label: Title, name: title, widget: string }
           - { label: Image, name: image, widget: image }
