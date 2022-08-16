@@ -1,5 +1,0 @@
-backend:
-  name: GirlsCode
-
-# when using the default proxy server port
-local_backend: true
