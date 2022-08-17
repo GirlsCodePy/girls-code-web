@@ -47,7 +47,7 @@ export const IndexPageTemplate = ({
                   title="wantCollaborate"
                   subtitle="supportUs"
                   buttonLabel="donate"
-                  buttonLink="https://www.patreon.com/"
+                  buttonLink="https://www.metrepay.com/girlscode"
                 />
                 <Encourage
                   image={WriteUs}
