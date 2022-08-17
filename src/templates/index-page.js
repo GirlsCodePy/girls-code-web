@@ -1,28 +1,30 @@
-import React from "react";
-import PropTypes from "prop-types";
-import {graphql } from "gatsby";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { graphql } from 'gatsby';
 
-import Layout from "../components/Layout";
-import FlowerLogo from "../img/flower.svg";
-import WriteUs from "../img/writeUs.svg";
-import Encourage from "../components/Encourage";
-import SplitBanner from "../components/SplitBanner";
-import WhoWeAre from "../components/WhoWeAre";
-import WhatWeDo from "../components/WhatWeDo";
-import Partner from "../components/Partner";
+import Layout from '../components/Layout';
+import FlowerLogo from '../img/flower.svg';
+import WriteUs from '../img/writeUs.svg';
+import Encourage from '../components/Encourage';
+import SplitBanner from '../components/SplitBanner';
+import WhoWeAre from '../components/WhoWeAre';
+import WhatWeDo from '../components/WhatWeDo';
+import Partner from '../components/Partner';
+import Testimonies from '../components/Testimonies';
 
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import {useTranslatedData} from "../utils";
+import { useTranslatedData } from '../utils';
 
 export const IndexPageTemplate = ({
   heading,
   mainpitch,
   description,
+  testimonies,
 }) => (
   <div>
-    <ToastContainer/>
+    <ToastContainer />
     <SplitBanner />
     <WhoWeAre
       title={mainpitch.title}
@@ -32,6 +34,7 @@ export const IndexPageTemplate = ({
       label={mainpitch.label}
     />
     <WhatWeDo />
+    <Testimonies testimonies={testimonies} />
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
@@ -44,7 +47,7 @@ export const IndexPageTemplate = ({
                   title="wantCollaborate"
                   subtitle="supportUs"
                   buttonLabel="donate"
-                  buttonLink="https://www.patreon.com/"
+                  buttonLink="https://www.metrepay.com/girlscode"
                 />
                 <Encourage
                   image={WriteUs}
@@ -53,7 +56,6 @@ export const IndexPageTemplate = ({
                   buttonLabel="writeUs"
                   buttonLink="/contact"
                 />
-
               </div>
             </div>
           </div>
@@ -74,10 +76,18 @@ IndexPageTemplate.propTypes = {
   }),
 };
 
-const IndexPage = ({ data }) => {
+const IndexPage = ({ entry, data }) => {
   const { frontmatter } = data.markdownRemark;
-  const mainpitch = useTranslatedData(frontmatter.mainpitch)
-  console.log(mainpitch);
+  const mainpitch = useTranslatedData(frontmatter.mainpitch);
+  const testimonies = useTranslatedData(frontmatter.testimonies);
+
+  const testimoniesEntries = Object.keys(testimonies).reduce(
+    (prev, testimonieKey) => {
+      return [...prev, testimonies[testimonieKey]];
+    },
+    []
+  );
+
   return (
     <Layout>
       <IndexPageTemplate
@@ -87,6 +97,7 @@ const IndexPage = ({ data }) => {
         mainpitch={mainpitch}
         description={frontmatter.description}
         intro={frontmatter.intro}
+        testimonies={testimoniesEntries}
       />
     </Layout>
   );
@@ -124,6 +135,12 @@ export const pageQuery = graphql`
           label
         }
         description
+        testimonies {
+          author_es
+          author_en
+          quote_es
+          quote_en
+        }
       }
     }
   }
