@@ -9,7 +9,7 @@ backend:
     deleteMedia: "[skip ci] Delete “{{path}}”"
 
 # when using the default proxy server port
-#local_backend: true
+local_backend: true
 
 media_folder: static/img
 public_folder: /img
@@ -145,7 +145,7 @@ collections:
               name: "templateKey",
               widget: "hidden",
               default: "about-page",
-            }
+            }      
           - { label: "Título Español", name: title_es, widget: string }
           - { label: "Título Inglés", name: title_en, widget: string }
           - {
@@ -253,7 +253,8 @@ collections:
         label: "Team"
         name: "team"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: Titulo Español, name: title_es, widget: string }
+          - { label: Titulo Ingles, name: title_en, widget: string }
           - {
               label: "Members",
               name: members,

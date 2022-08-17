@@ -1,6 +1,7 @@
 ---
 templateKey: "team-page"
-title: Equipo
+title_es: Equipo1
+title_en: Equipo2
 members:
   - name: Gabriela Gaona
     position: Directora & Co-founder

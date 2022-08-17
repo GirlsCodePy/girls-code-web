@@ -8,7 +8,7 @@ export const useTranslatedData = data => {
 
 const translate = (data, lang) => {
   const translated = {}
-  //console.log('data', data);
+  console.log('data', data);
   console.log('Lang', lang);
 
   for (let key in data) {

@@ -4,6 +4,7 @@ import TeamMember from "../components/TeamMember"
 import Container from "../components/Container"
 import CustomNavbar from "../components/CustomNavbar"
 import { graphql } from "gatsby"
+import {useTranslatedData} from "../utils";
 
 const TeamPageTemplate = ({ title, members }) => (
   <Container>
@@ -24,11 +25,11 @@ const TeamPageTemplate = ({ title, members }) => (
 
 const TeamPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-
+  const team = useTranslatedData(frontmatter)
   return (
     <Layout>
       <TeamPageTemplate
-        title={frontmatter.title}
+        title={team.title}
         members={frontmatter.members}
       />
     </Layout>
