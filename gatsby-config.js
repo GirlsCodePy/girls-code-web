@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Girls Code - Nosotras Creemos Ellas Hacen',
+    title: 'Girls Code - Ellas crean si creemos en ellas',
     description:
-      'Girls Code - Nosotras Creemos Ellas Hacen - Buscamos la inclusión digital de mujeres en las áreas de STEAM en todo Paraguay con espacios de aprendizaje en base a nuestros valores',
+      'Girls Code - Ellas crean si creemos en ellas - Buscamos la inclusión digital de mujeres en las áreas de STEAM en todo Paraguay con espacios de aprendizaje en base a nuestros valores',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
