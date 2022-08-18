@@ -8,7 +8,7 @@ const TeamPagePreview = ({ entry, getAsset }) => {
     ...member,
     image: getAsset(member.image)
   }))
-
+  //console.log(entry)
   return (
     <TeamPageTemplate
       title={entry.getIn(["data", "title"])}

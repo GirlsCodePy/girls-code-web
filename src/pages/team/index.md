@@ -1,27 +1,10 @@
 ---
 templateKey: "team-page"
-title_es: Equipo1
-title_en: Equipo2
+title_es: Nuestro Equipo
+title_en: Our Team
 members:
   - name: Gabriela Gaona
-    position: Directora & Co-founder
-    image: img/blog-index.jpg
-  - name: Gabriela Gaona
-    position: Directora & Co-founder
-    image: img/blog-index.jpg
-  - name: Gabriela Gaona
-    position: Directora & Co-founder
-    image: img/blog-index.jpg
-  - name: Gabriela Gaona
-    position: Directora & Co-founder
-    image: img/blog-index.jpg
-  - name: Gabriela Gaona
-    position: Directora & Co-founder
-    image: img/blog-index.jpg
-  - name: Gabriela Gaona
-    position: Directora & Co-founder
-    image: img/blog-index.jpg
-  - name: Gabriela Gaona
-    position: Directora & Co-founder
+    position_es: Directora & Co-fundadora
+    position_en: CEO & Co-founder
     image: img/blog-index.jpg
 ---

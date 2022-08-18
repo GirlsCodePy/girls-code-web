@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next"
 
 export const useTranslatedData = data => {
+  
   const { i18n } = useTranslation()
   if (!data) return null
   return translate(data, i18n.language)
@@ -8,9 +9,10 @@ export const useTranslatedData = data => {
 
 const translate = (data, lang) => {
   const translated = {}
-  console.log('data', data);
-  console.log('Lang', lang);
+  //console.log('data', data);
+  //console.log('Lang', lang);
 
+  //console.log(data)
   for (let key in data) {
     if (data.hasOwnProperty(key)) {
       const retKey = key.includes("_") ? key.split("_")[0] : key

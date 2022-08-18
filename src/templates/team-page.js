@@ -4,7 +4,8 @@ import TeamMember from "../components/TeamMember"
 import Container from "../components/Container"
 import CustomNavbar from "../components/CustomNavbar"
 import { graphql } from "gatsby"
-import {useTranslatedData} from "../utils";
+import { useTranslatedData } from "../utils"
+//import {useTranslatedData} from "../utils";
 
 const TeamPageTemplate = ({ title, members }) => (
   <Container>
@@ -25,12 +26,12 @@ const TeamPageTemplate = ({ title, members }) => (
 
 const TeamPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
-  const team = useTranslatedData(frontmatter)
+  const {title , members} = useTranslatedData(frontmatter)
   return (
     <Layout>
       <TeamPageTemplate
-        title={team.title}
-        members={frontmatter.members}
+        title={title}
+        members={members}
       />
     </Layout>
   )
@@ -42,10 +43,12 @@ export const teamPageQuery = graphql`
   {
     markdownRemark(frontmatter: { templateKey: { eq: "team-page" } }) {
       frontmatter {
-        title
+        title_es
+        title_en
         members {
           name
-          position
+          position_es
+          position_en
           image
         }
       }
