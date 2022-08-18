@@ -2,21 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 import PropTypes from 'prop-types';
 import './style.sass';
-// const items = [
-//   {
-//     title: 'Title',
-//     image: 'img/activities/IMG_20160416_161309.png',
-//     content:
-//       'Nostrud ex cillum Lorem aliqua est.Nostrud ex cillum Lorem aliqua est. ',
-//     footer: 'Author - String',
-//   },
-//   {
-//     title: 'Title 2',
-//     image: 'img/activities/IMG-20160409-WA0054.png',
-//     content: 'Nostrud ex cillum Lorem aliqua est.',
-//     footer: 'Author 2 - String',
-//   },
-// ];
 
 const GenericCarousel = ({
   autoPlay = false,
@@ -25,6 +10,7 @@ const GenericCarousel = ({
   carouselDotClass = '',
   carouselDotActiveClass = 'active-dot',
   items,
+  autoPlayDelay = 4000,
 }) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -46,14 +32,14 @@ const GenericCarousel = ({
       setSelectedSlide(items[nextIndex]);
       setSelectedIndex(nextIndex);
       setLoaded(true);
-    }, 200);
+    }, 500);
   };
 
   useEffect(() => {
     if (autoPlay || !showButtons) {
       const interval = setInterval(() => {
         selectNewSlide(selectedIndex);
-      }, 3800);
+      }, autoPlayDelay);
       return () => clearInterval(interval);
     }
   });
@@ -122,11 +108,12 @@ GenericCarousel.propTypes = {
       content: PropTypes.string,
       footer: PropTypes.string,
     })
-  ),
+  ).isRequired,
   showButtons: PropTypes.bool,
   autoPlay: PropTypes.bool,
   slideTextClass: PropTypes.string,
   carouselDotClass: PropTypes.string,
+  autoPlayDelay: PropTypes.number,
 };
 
 export default GenericCarousel;
