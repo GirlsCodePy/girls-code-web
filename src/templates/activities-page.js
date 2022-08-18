@@ -6,7 +6,6 @@ import Carousel from "../components/Carousel";
 import CustomNavbar from "../components/CustomNavbar"
 
 const ActivitiesPageTemplate = ({ title, subtitle, workshops, courses, mentoring }) => {
-  console.log('workshops', workshops)
   return (
     <>
       <Container>
