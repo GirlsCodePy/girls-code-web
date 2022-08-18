@@ -29,7 +29,7 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 testimonies:
-  - quote_es: Consequat Lorem eu aute tempor Lorem laborum nostrud non.
+  - quote_es: Consequat Lorem eu aute tempor Lorem laborum nostrud non. Eiusmod ad ad amet irure id in est ex eiusmod nisi anim Lorem culpa. Aute nisi aliqua deserunt cupidatat minim Lorem labore ad deserunt exercitation occaecat nulla esse cillum.
     quote_en: English 2.
     author_es: Author 1 - Estudianta
     author_en: Author 1 - Student
