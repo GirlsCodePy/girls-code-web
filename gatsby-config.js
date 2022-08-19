@@ -4,15 +4,19 @@ module.exports = {
     description:
       'Girls Code - Ellas crean si creemos en ellas - Buscamos la inclusión digital de mujeres en las áreas de STEAM en todo Paraguay con espacios de aprendizaje en base a nuestros valores',
   },
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: "gatsby-plugin-sass",
+      resolve: 'gatsby-plugin-sass',
       options: {
-        data: '@import "variables.sass";',
-        includePaths: [
-          'styles',
-        ],
+        additionalData: '@import "variables.sass"',
+        sassOptions: {
+          includePaths: ['styles'],
+          indentedSyntax: true,
+        },
       },
     },
     {
@@ -24,11 +28,11 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {
-          families: ["geomanistregular","Roboto","Geomanist"],
-          urls: ["/fonts/fonts.css"],
+          families: ['geomanistregular', 'Roboto', 'Geomanist'],
+          urls: ['/fonts/fonts.css'],
         },
       },
     },
@@ -46,6 +50,7 @@ module.exports = {
         name: 'images',
       },
     },
+    `gatsby-plugin-image`,
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
@@ -53,7 +58,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-relative-images',
+            resolve: 'gatsby-remark-relative-images-v2',
             options: {
               name: 'uploads',
             },
@@ -92,15 +97,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-eslint',
       options: {
-        test: /\.js$|\.jsx$/,
-        exclude: /(node_modules|cache|public)/,
+        // Gatsby required rules directory
+        // Default settings that may be ommitted or customized
         stages: ['develop'],
-        options: {
-          emitWarning: true,
-          failOnError: false
-        }
-      }
+        extensions: ['js', 'jsx', 'ts', 'tsx'],
+        exclude: ['node_modules', 'bower_components', '.cache', 'public'],
+        emitWarning: true,
+        failOnError: false,
+        // ...
+      },
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
-}
+};
