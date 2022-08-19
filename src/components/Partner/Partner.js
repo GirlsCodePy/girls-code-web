@@ -9,13 +9,13 @@ export const Partner = ({t}) => (
         </div>
         <div className="section-logos">
             <div className="wrapper">
-                <div><img class="center" src= "/img/koga-impact-lab.png" alt="koga impact lab" /></div>
-                <div><img class="center" src="/img/mitic.png" alt="mitic" /></div>
-                <div><img class="center" src="/img/campus-party.png" alt="campus party" /></div>
-                <div><img class="center" src="/img/paraguay-educa.png" alt="paraguay educa" /></div>
-                <div><img class="center" src="/img/global-shapers.png" alt="global shapers" /></div>
-                <div><img class="center enfoque" src="/img/enfoque-ninez.png" alt="enfoque niñez" /></div>
-                <div><img class="center" src="/img/django-girls.png" alt="django girls" /></div>
+                <div><img className="center" src= "/img/koga-impact-lab.png" alt="koga impact lab" /></div>
+                <div><img className="center" src="/img/mitic.png" alt="mitic" /></div>
+                <div><img className="center" src="/img/campus-party.png" alt="campus party" /></div>
+                <div><img className="center" src="/img/paraguay-educa.png" alt="paraguay educa" /></div>
+                <div><img className="center" src="/img/global-shapers.png" alt="global shapers" /></div>
+                <div><img className="center enfoque" src="/img/enfoque-ninez.png" alt="enfoque niñez" /></div>
+                <div><img className="center" src="/img/django-girls.png" alt="django girls" /></div>
             </div>
         </div>
     </>

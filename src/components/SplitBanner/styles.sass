@@ -31,7 +31,6 @@ $split-vertical-offset: 63px
   bottom: $split-vertical-offset
   zIndex: 10
 
-
 .split-left-content
   display: flex
   flex-direction: column
@@ -41,7 +40,7 @@ $split-vertical-offset: 63px
   padding-left: 90px
   padding-right: 90px
   position: relative
-  top: #{$split-vertical-offset/2}
+  top: #{calc($split-vertical-offset/2)}
 
 .split-label-white
   font-family: $family-primary
@@ -67,7 +66,6 @@ $split-vertical-offset: 63px
   border-color: transparent $gc-yellow
   position: absolute
   right: 0px
-
 
 +mobile
   .split-left-triangle
@@ -102,18 +100,13 @@ $split-vertical-offset: 63px
 
 .split-right-img-container
   padding-left: 10px
-  
+
 .split-right-empty-container
   min-width: 50px
   background-color: red
   flex: 1
   display: flex
 
-
-
-
 a
-  &:hover 
+  &:hover
     background-color: transparent !important
-
-

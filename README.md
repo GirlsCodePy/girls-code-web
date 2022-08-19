@@ -21,7 +21,7 @@ git remote add girlscodepy https://github.com/GirlsCodePy/girls-code-web.git
 ```
 ## Prerequisitos
 
-- Node (Versión v8.2.0 o mayor)
+- Node (Versión v16.10.0 o mayor)
 - [Gatsby CLI](https://www.gatsbyjs.org/docs/)
 - [Netlify CLI](https://github.com/netlify/cli)
 
