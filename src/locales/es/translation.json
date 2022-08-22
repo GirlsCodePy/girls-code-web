@@ -20,10 +20,10 @@
   "lastName": "Apellido",
   "email": "Correo",
   "subscribeMe": "Subscribirme",
-  "whatWeDo":"Qué Hacemos",
+  "whatWeDo": "Qué Hacemos",
   "testimonies": "Testimonios",
   "us": "Nosotras",
-  "about":"Quiénes Somos",
+  "about": "Quiénes Somos",
   "courses": "Cursos",
   "workshops": "Talleres",
   "mentorship": "Mentorías",
@@ -33,5 +33,12 @@
   "vision": "Visión",
   "mission": "Misión",
   "homePhraseWhite": "Ellas crean",
-  "homePhraseAccent": "Si creemos en ellas"
+  "homePhraseAccent": "Si creemos en ellas",
+  "contactName": "Tu nombre",
+  "contactEmail": "Email",
+  "contactMessage": "Mensaje",
+  "contactSend": "Enviar",
+  "contactTitle": "Contacto",
+  "textUs": "¡Escribinos!",
+  "contactSendError": "Ocurrió un error al enviar el email. Por favor intenta de vuelta"
 }

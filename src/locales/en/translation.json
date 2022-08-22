@@ -33,5 +33,12 @@
   "vision": "Vision",
   "mission": "Mission",
   "homePhraseWhite": "They create",
-  "homePhraseAccent": "If we believe in them"
+  "homePhraseAccent": "If we believe in them",
+  "contactName": "Your name",
+  "contactEmail": "Email",
+  "contactMessage": "Message",
+  "contactSend": "Send",
+  "contactTitle": "Contact us",
+  "textUs": "Text us!",
+  "contactSendError": "Error sending email. Please try again"
 }
