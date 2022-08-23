@@ -61,7 +61,7 @@
 
 .socials
   display: flex
-  align-items: flex-start
+  align-items: baseline
   justify-content: space-around
   width: 50%
   max-height: 20px
@@ -91,6 +91,23 @@
 .icon-color
   filter: brightness(0) invert(1)
 
+.email-sent-image-container
+  background-color: $gc-purple
+  padding: 3rem 6rem
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  p
+    color: #fff
+  img
+    height: auto
+    width: auto
+    max-height: 500px
+    margin-top: 32px
+    margin-bottom: 32px
+
 +mobile
   .info-container
     flex-direction: column
@@ -101,3 +118,5 @@
     flex-direction: column
   .socials-icon-container
     margin-top: 16px
+
+

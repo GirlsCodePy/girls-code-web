@@ -40,5 +40,7 @@
   "contactSend": "Enviar",
   "contactTitle": "Contacto",
   "textUs": "¡Escribinos!",
-  "contactSendError": "Ocurrió un error al enviar el email. Por favor intenta de vuelta"
+  "contactSendError": "Ocurrió un error al enviar el email. Por favor intenta de vuelta",
+  "emailSent": "¡Email enviado!",
+  "emailSentMessage": "Muchas gracias. Hemos recibido tu mensaje y nos pondremos en contacto contigo"
 }
