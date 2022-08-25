@@ -10,3 +10,7 @@ yarn-error.log
 
 # idea file
 .idea/**
+
+Dockerfile
+.devcontainer/
+.dockeignore
