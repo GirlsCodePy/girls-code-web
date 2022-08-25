@@ -6,6 +6,7 @@ import { AboutPageTemplate } from '../../templates/templates-components';
 
 const AboutPagePreview = ({ entry }) => {
   const data = entry.getIn(['data']).toJS();
+  console.log('data', data);
   const translatedData = useTranslatedData(data);
 
   if (translatedData) {

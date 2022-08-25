@@ -70,7 +70,16 @@ collections:
                     name: description_en,
                     widget: text,
                   },
-                  { label: Logo, name: logo, widget: text },
+                  {
+                    label: Logo,
+                    name: logo,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
                   { label: Link, name: link, widget: string },
                   { label: Label, name: label, widget: string },
                 ],

@@ -24,7 +24,7 @@ const IndexPageTemplate = ({
     <SplitBanner />
     <WhoWeAre
       title={mainpitch.title}
-      image={mainpitch.logo}
+      image={mainpitch.logo.imageInfo}
       description={mainpitch.description}
       link={mainpitch.link}
       label={mainpitch.label}
