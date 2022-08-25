@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { withTranslation } from 'react-i18next';
 
-
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 
@@ -35,7 +34,6 @@ const ContactPage = ({ t }) => {
           setShowForm(false);
         },
         (error) => {
-          setSending(false);
           toast.error(t('contactSendError'));
         }
       );
@@ -47,7 +45,7 @@ const ContactPage = ({ t }) => {
       <Container>
         <CustomNavbar className="navbar-nopadding" />
       </Container>
-      <div className="contact-container section">
+      <div className={`section ${showForm ? 'contact-container-bg ' : ''}`}>
         <Container>
           {showForm ? (
             <ContactForm form={form} sendEmail={sendEmail} sending={sending} />

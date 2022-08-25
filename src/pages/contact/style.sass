@@ -1,6 +1,6 @@
 @import "bulma/sass/utilities/_all.sass"
 
-.contact-container
+.contact-container-bg
   background-color: $gc-purple
 
 .contact-title
@@ -80,6 +80,8 @@
   flex-direction: column
   .textarea
     flex: 1 1 0%
+    font-family: Roboto
+    font-size: 20px
 
 .socials-text
   color: #FFFFFF
@@ -87,12 +89,12 @@
   letter-spacing: 0
   line-height: 32px
   font-weight: normal
+  font-family: geomanistregular
 
 .icon-color
   filter: brightness(0) invert(1)
 
 .email-sent-image-container
-  background-color: $gc-purple
   padding: 3rem 6rem
   display: flex
   justify-content: center
@@ -100,13 +102,16 @@
   flex-direction: column
 
   p
-    color: #fff
+    color: #282828
   img
     height: auto
     width: auto
     max-height: 500px
     margin-top: 32px
     margin-bottom: 32px
+
+.control,.detail
+  font-family: Roboto
 
 +mobile
   .info-container
@@ -118,5 +123,3 @@
     flex-direction: column
   .socials-icon-container
     margin-top: 16px
-
-
