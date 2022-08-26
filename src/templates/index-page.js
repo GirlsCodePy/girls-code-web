@@ -65,7 +65,6 @@ export const pageQuery = graphql`
           link
           label
         }
-        description
         testimonies {
           author_es
           author_en
