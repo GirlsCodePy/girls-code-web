@@ -234,7 +234,8 @@ collections:
         label: 'Team'
         name: 'team'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Title ES', name: 'title_es', widget: 'string' }
+          - { label: 'Title EN', name: 'title_en', widget: 'string' }
           - {
               label: 'Members',
               name: members,
@@ -242,7 +243,8 @@ collections:
               fields:
                 [
                   { label: Name, name: name, widget: string },
-                  { label: Position, name: position, widget: string },
+                  { label: Position ES, name: position_es, widget: string },
+                  { label: Position EN, name: position_en, widget: string },
                   { label: Image, name: image, widget: image },
                 ],
             }
