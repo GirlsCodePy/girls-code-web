@@ -1,5 +1,5 @@
 import React from "react"
-import { TeamPageTemplate } from "../../templates/team-page"
+import { TeamPageTemplate } from '../../templates/templates-components';
 
 const TeamPagePreview = ({ entry, getAsset }) => {
   const entryMembers = entry.getIn(["data", "members"])
