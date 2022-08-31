@@ -1,0 +1,66 @@
+.generic-carousel-container
+  display: flex
+  flex-direction: column
+  padding: 0px 2em
+  gap: 20px
+  min-height: 300px
+
+.generic-carousel-content
+  display: flex
+  flex: 1
+  justify-content: center
+  gap: 3rem
+  opacity: 0
+  transition-duration: 1s ease
+  transform: translate(1000px, 0px)
+
+.active
+  opacity: 1
+  transition-duration: 1s
+  transform: translate(0px, 0px)
+
+.inactive
+  display: none
+
+.generic-slide-image
+  height: 20rem
+  object-fit: cover
+
+.generic-slide-image-container
+  display: flex
+  justify-content: center
+
+.generic-carousel-description
+  display: flex
+  flex-direction: column
+  justify-content: center
+  text-align: center
+  align-items: center
+
+.spacer
+  flex: 1
+
+.carousel-dot-container
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 16px
+  margin-top: 16px
+
+.carousel-dot
+  height: 10px
+  width: 10px
+  background-color: white
+  transition: 1.5s linear
+  border-radius: 50%
+  cursor: pointer
+
+.active-dot
+  background-color: #f5b223
+  transition-duration: 1.5s
+
+@media screen and (max-width: 700px)
+  .generic-carousel-content
+    flex-direction: column
+  .generic-carousel-container
+    min-height: 300px
