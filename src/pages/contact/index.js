@@ -10,6 +10,11 @@ import Container from '../../components/Container';
 import './style.sass';
 import ContactForm from './ContactForm';
 import EmailSent from './EmailSent';
+import {
+  EMAIL_JS_SERVICE_ID,
+  EMAIL_JS_TEMPLATE_ID,
+  EMAIL_JS_USER_ID,
+} from '../../config';
 
 const ContactPage = ({ t }) => {
   const form = useRef();
@@ -23,10 +28,10 @@ const ContactPage = ({ t }) => {
 
     emailjs
       .sendForm(
-        'service_r951ybm',
-        'template_yy8hgea',
+        EMAIL_JS_SERVICE_ID,
+        EMAIL_JS_TEMPLATE_ID,
         form.current,
-        '8WALsufFZOplDZPVf'
+        EMAIL_JS_USER_ID
       )
       .then(
         (result) => {
