@@ -257,3 +257,56 @@ collections:
                   { label: Image, name: image, widget: image },
                 ],
             }
+      - file: 'src/pages/activities/index.md'
+        label: 'Activities'
+        name: 'activities'
+        fields:
+          - { label: 'Title ES', name: 'title_es', widget: 'string' }
+          - { label: 'Title EN', name: 'title_en', widget: 'string' }
+          - { label: 'Subtitle ES', name: 'subtitle_es', widget: 'string' }
+          - { label: 'Subtitle EN', name: 'subtitle_en', widget: 'string' }
+          - {
+              label: 'Workshops',
+              name: workshops,
+              widget: list,
+              fields:
+                [
+                  { label: Name ES, name: name_es, widget: string },
+                  { label: Description ES, name: description_es, widget: string },
+                  { label: imageTitle ES, name: imageTitle_es, widget: string },
+                  { label: Name EN, name: name_en, widget: string },
+                  { label: Description EN, name: description_en, widget: string },
+                  { label: imageTitle EN, name: imageTitle_en, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - {
+              label: 'Courses',
+              name: courses,
+              widget: list,
+              fields:
+                [
+                  { label: Name ES, name: name_es, widget: string },
+                  { label: Description ES, name: description_es, widget: string },
+                  { label: imageTitle ES, name: imageTitle_es, widget: string },
+                  { label: Name EN, name: name_en, widget: string },
+                  { label: Description EN, name: description_en, widget: string },
+                  { label: imageTitle EN, name: imageTitle_en, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
+          - {
+              label: 'Mentoring',
+              name: mentoring,
+              widget: list,
+              fields:
+                [
+                  { label: Name ES, name: name_es, widget: string },
+                  { label: Description ES, name: description_es, widget: string },
+                  { label: imageTitle ES, name: imageTitle_es, widget: string },
+                  { label: Name EN, name: name_en, widget: string },
+                  { label: Description EN, name: description_en, widget: string },
+                  { label: imageTitle EN, name: imageTitle_en, widget: string },
+                  { label: Image, name: image, widget: image },
+                ],
+            }
