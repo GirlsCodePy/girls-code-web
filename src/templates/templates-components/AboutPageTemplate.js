@@ -4,7 +4,6 @@ import Container from '../../components/Container';
 import ShowMore from '../../components/ShowMore';
 import PreviewCompatibleImage from '../../components/PreviewCompatibleImage';
 import CustomNavbar from '../../components/CustomNavbar';
-import { GatsbyImage } from 'gatsby-plugin-image';
 
 const AboutPageTemplate = ({ title, vision, mission, subtitle, values }) => {
   return (
@@ -52,15 +51,11 @@ const AboutPageTemplate = ({ title, vision, mission, subtitle, values }) => {
           </div>
           <div className="columns is-flex-direction-row is-multiline">
             {values.map((item) => {
-              const { image, alt } = item.imageInfo;
               return (
                 <div className="column is-4">
                   <div className="is-fixed-column">
                     <div className="mb-5">
-                      <GatsbyImage
-                        image={(image.childImageSharp.gatsbyImageData)}
-                        alt={alt}
-                      />
+                      <PreviewCompatibleImage imageInfo={item.imageInfo} />
                     </div>
                     <h2 className="gc-subtitle mb-3">{item.title}</h2>
                     <p className="title-content-purple mb-5">
