@@ -1,0 +1,125 @@
+@import "bulma/sass/utilities/_all.sass"
+
+.contact-container-bg
+  background-color: $gc-purple
+
+.contact-title
+  color: #DDDD37
+  font-size: 61px
+  font-weight: 900
+  letter-spacing: 0
+  line-height: 63px
+  margin-bottom: 27.5px
+
+.text-us
+  height: 63px
+  width: 158px
+  color: #FFFFFF
+  font-size: 25px
+  font-weight: 900
+  letter-spacing: 0
+  line-height: 63px
+  margin-bottom: 20px
+
+.contact-form
+  display: flex
+  flex-direction: column
+  align-items: end
+  justify-content: space-between
+
+.info-container
+  width: 100%
+  margin-bottom: 16px
+  display: flex
+  justify-content: space-between
+  gap: 56px
+  min-height: 353px
+
+.contact-nav
+  padding: 0
+
+.contact-labels
+  height: 63px
+  width: 64px
+  color: #FFFFFF
+  font-size: 17px
+  font-weight: 500
+  letter-spacing: 0
+  line-height: 63px
+  text-align: center
+
+.info-left
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  flex: 1 1 0%
+
+.info-right
+  flex: 1 1 0%
+  display: flex
+  flex-direction: column
+
+.socials
+  display: flex
+  align-items: baseline
+  justify-content: space-around
+  width: 50%
+  max-height: 20px
+  margin-bottom: 16px
+
+.socials-container
+  display: flex
+  width: 100%
+  align-self: flex-start
+  justify-content: space-between
+  margin-top: 42px
+
+.text-area-container
+  flex: 1 1 0%
+  display: flex
+  flex-direction: column
+  .textarea
+    flex: 1 1 0%
+    font-family: Roboto
+    font-size: 20px
+
+.socials-text
+  color: #FFFFFF
+  font-size: 12px
+  letter-spacing: 0
+  line-height: 32px
+  font-weight: normal
+  font-family: geomanistregular
+
+.icon-color
+  filter: brightness(0) invert(1)
+
+.email-sent-image-container
+  padding: 3rem 6rem
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  p
+    color: #282828
+  img
+    height: auto
+    width: auto
+    max-height: 500px
+    margin-top: 32px
+    margin-bottom: 32px
+
+.control,.detail
+  font-family: Roboto
+
++mobile
+  .info-container
+    flex-direction: column
+  .socials
+    max-height: 8px
+    width: 100%
+  .socials-container
+    flex-direction: column
+  .socials-icon-container
+    margin-top: 16px

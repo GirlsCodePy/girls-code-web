@@ -1,117 +1,66 @@
-import React from 'react'
-import { navigate } from 'gatsby-link'
-import Layout from '../../components/Layout'
-import CustomNavbar from "../../components/CustomNavbar"
+import React, { useRef, useState } from 'react';
+import { withTranslation } from 'react-i18next';
 
-function encode(data) {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-    .join('&')
-}
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
 
-export default class Index extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { isValidated: false }
-  }
+import Layout from '../../components/Layout';
+import CustomNavbar from '../../components/CustomNavbar';
+import Container from '../../components/Container';
+import './style.sass';
+import ContactForm from './ContactForm';
+import EmailSent from './EmailSent';
+import {
+  EMAIL_JS_SERVICE_ID,
+  EMAIL_JS_TEMPLATE_ID,
+  EMAIL_JS_USER_ID,
+} from '../../config';
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value })
-  }
+const ContactPage = ({ t }) => {
+  const form = useRef();
 
-  handleSubmit = e => {
-    e.preventDefault()
-    const form = e.target
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
-    })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error))
-  }
+  const [sending, setSending] = useState(false);
+  const [showForm, setShowForm] = useState(true);
 
-  render() {
-    return (
-      <Layout>
-        <section className="section">
-          <div className="container">
-            <CustomNavbar/> 
-            <div className="content">
-              <h1>Contact</h1>
-              <form
-                name="contact"
-                method="post"
-                action="/contact/thanks/"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-                onSubmit={this.handleSubmit}
-              >
-                {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-                <input type="hidden" name="form-name" value="contact" />
-                <div hidden>
-                  <label>
-                    Don’t fill this out:{' '}
-                    <input name="bot-field" onChange={this.handleChange} />
-                  </label>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'name'}>
-                    Your name
-                  </label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type={'text'}
-                      name={'name'}
-                      onChange={this.handleChange}
-                      id={'name'}
-                      required={true}
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'email'}>
-                    Email
-                  </label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      type={'email'}
-                      name={'email'}
-                      onChange={this.handleChange}
-                      id={'email'}
-                      required={true}
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <label className="label" htmlFor={'message'}>
-                    Message
-                  </label>
-                  <div className="control">
-                    <textarea
-                      className="textarea"
-                      name={'message'}
-                      onChange={this.handleChange}
-                      id={'message'}
-                      required={true}
-                    />
-                  </div>
-                </div>
-                <div className="field">
-                  <button className="button is-link" type="submit">
-                    Send
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </section>
-      </Layout>
-    )
-  }
-}
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSending(true);
+
+    emailjs
+      .sendForm(
+        EMAIL_JS_SERVICE_ID,
+        EMAIL_JS_TEMPLATE_ID,
+        form.current,
+        EMAIL_JS_USER_ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setShowForm(false);
+        },
+        (error) => {
+          toast.error(t('contactSendError'));
+        }
+      );
+  };
+
+  return (
+    <Layout>
+      <ToastContainer />
+      <Container>
+        <CustomNavbar className="navbar-nopadding" />
+      </Container>
+      <div className={`section ${showForm ? 'contact-container-bg ' : ''}`}>
+        <Container>
+          {showForm ? (
+            <ContactForm form={form} sendEmail={sendEmail} sending={sending} />
+          ) : (
+            <EmailSent />
+          )}
+        </Container>
+      </div>
+    </Layout>
+  );
+};
+
+export default withTranslation()(ContactPage);
