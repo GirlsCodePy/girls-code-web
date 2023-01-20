@@ -32,7 +32,7 @@ main:
     alt: Coffee beans
     image: /img/products-grid1.jpg
 testimonies:
-  - quote_es: Consequat Lorem eu aute tempor Lorem laborum nostrud non.
+  - quote_es: Este programa fue fundamental para mi desarrollo personal y profesional, me ayudó a crecer, además de permitirme tener una mentora increible.
     quote_en: English 2.
     author_es: Author 1 - Estudianta
     author_en: Author 1 - Student
