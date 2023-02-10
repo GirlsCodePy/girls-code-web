@@ -9,7 +9,7 @@ workshops:
   - image: img/activities/IMG_20160416_161309.png
     imageTitle_es: Juan de Salazar - Creathon
     name_es: Introducción a Scratch
-    description_es: Talleres para aprender a utilizar la plataforma Scratch, reconocer la interfaz de bloques de programación, y las diferentes funcionalidades. Las alumnas aprenden a crear algoritmos utilizando los bloques de Scratch.
+    description_es: Talleres para aprender a utilizar la plataforma Scratch, reconocer la interfaz de bloques de programación, y las diferentes   funcionalidades. Las alumnas aprenden a crear algoritmos utilizando los bloques de Scratch.
     imageTitle_en: Juan de Salazar - Creathon
     name_en: Introduction to Scratch
     description_en: Workshops to learn how to use the Scratch platform, recognize the programming blocks interface, and the different functionalities. Students learn to create algorithms using the Scratch blocks.
