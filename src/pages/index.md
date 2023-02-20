@@ -36,10 +36,8 @@ testimonies:
     quote_en: This program was essential for my personal and professional development, it helped me grow, as well as allowing me to have an incredible mentor.
     author_es: Author 1 - Edda Alcaraz
     author_en: Author 1 - Edda Alcaraz
-  - quote_es: Estoy agradecida con mi mentora, pues con sus consejos he podido afrontar ciertas situaciones difíciles y salir victoriosa.
-Gracias a la mentoría pude superarme a mí misma, me ha servido tanto en el ámbito laboral-académico como en lo personal.
-    quote_en: I am grateful to my mentor, because with her advice I have been able to face certain difficult situations and come out victoriously.
-Thanks to the mentoring I was able to improve myself, it was useful both in the work-academic field and personally.
+  - quote_es: Estoy agradecida con mi mentora, pues con sus consejos he podido afrontar ciertas situaciones difíciles y salir victoriosa. Gracias a la mentoría pude superarme a mí misma, me ha servido tanto en el ámbito laboral-académico como en lo personal.
+    quote_en: I am grateful to my mentor, because with her advice I have been able to face certain difficult situations and come out victoriously. Thanks to the mentoring I was able to improve myself, it was useful both in the work-academic field and personally.
     author_es: Author 2 - Sofía Benítez
     author_en: Author 2 - Sofía Benítez
   - quote_es: El haber tenido la oportunidad de participar en el programa de Mentorías de Girls Code, me ha ayudado a expandir mi punto de vista tanto personal como profesional. Desde entonces estoy cada vez más entusiasmada en este mundo de la Tecnología.

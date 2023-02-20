@@ -16,8 +16,7 @@ workshops:
   - image: img/activities/IMG_20160416_161309.png
     imageTitle_es: Juan de Salazar - Creathon
     name_es: Introducción a la Programación
-    description_es: Talleres para conocer plataformas introductorias para programación como Scratch y Code.org
-Las alumnas aprenden conceptos básicos de algoritmos, lenguajes de programación, y programación de computadoras
+    description_es: Talleres para conocer plataformas introductorias para programación como Scratch y Code.org Las alumnas aprenden conceptos básicos de algoritmos, lenguajes de programación, y programación de computadoras
     imageTitle_en: Juan de Salazar - Creathon
     name_en: Introduction to Programming
     description_en: Workshops to learn about introductory programming platforms such as Scratch and Code.org. Students learn basic concepts of algorithms, programming languages, and computer programming.
@@ -28,7 +27,7 @@ Las alumnas aprenden conceptos básicos de algoritmos, lenguajes de programació
     imageTitle_en: Juan de Salazar - Creathon
     name_en: Designing your first CV with Canva
     description_en: A workshop to introduce the Canva platform by showing the sections and tools available for design and templates. Students learn about best practices for developing a personal resume.
-    - image: img/activities/IMG_20160416_161309.png
+  - image: img/activities/IMG_20160416_161309.png
     imageTitle_es: Juan de Salazar - Creathon
     name_es: Herramientas para desarrollo de clases virtuales para profesores 
     description_es: Un taller para conocer herramientas básicas para desarrollo de clase en línea como Google Classroom y Zoom.
@@ -53,13 +52,11 @@ courses:
   - image: img/activities/IMG_20160416_161309.png
     imageTitle_es: Juan de Salazar - Creathon
     name_es: Django Girls
-    description_es: Django Girls is una iniciativa que apunta a introducir a mujeres que nunca programaron antes al mundo de la tecnología, y así promover la diversidad. 
-Organizamos un taller de 2 días para invitar a chicas a unirse y aprender cómo está construido el Internet a través del uso de HTML, CSS, Python y Django.
+    description_es: Django Girls is una iniciativa que apunta a introducir a mujeres que nunca programaron antes al mundo de la tecnología, y así promover la diversidad. Organizamos un taller de 2 días para invitar a chicas a unirse y aprender cómo está construido el Internet a través del uso de HTML, CSS, Python y Django.
     imageTitle_en: Juan de Salazar - Creathon
     name_en: Django Girls
-    description_en: Django Girls is an initiative that aims to introduce women who have never programmed before to the world of technology, and thus promote diversity.
-We organized a 2-day workshop to invite girls to join and learn how the Internet is built through the use of HTML, CSS, Python and Django.
-- image: img/activities/IMG_20160416_161309.png
+    description_en: Django Girls is an initiative that aims to introduce women who have never programmed before to the world of technology, and thus promote diversity We organized a 2-day workshop to invite girls to join and learn how the Internet is built through the use of HTML, CSS, Python and Django.
+  - image: img/activities/IMG_20160416_161309.png
     imageTitle_es: Juan de Salazar - Creathon
     name_es: Introducción a Python
     description_es: Curso para aprender los conceptos básicos de programación con el lenguaje Python. Conocer cómo funciona la computadora y cómo funciona internet. 
@@ -70,21 +67,17 @@ mentoring:
   - image: img/activities/IMG_20160416_161309.png
     imageTitle_es: Juan de Salazar - Creathon
     name_es: Mentorías KFT
-    description_es: Programa de mentorías para el avance de carrera de mujeres en tecnología, programación e innovación. 
-Las mentorías se realizan mediante sesiones virtuales de uno a uno entre profesionales senior de estas áreas, y mujeres profesionales o graduadas del colegio que deseen adquirir conocimientos y experiencias relevantes para potenciar sus carreras en estos sectores.
+    description_es: Programa de mentorías para el avance de carrera de mujeres en tecnología, programación e innovación. Las mentorías se realizan mediante sesiones virtuales de uno a uno entre profesionales senior de estas áreas, y mujeres profesionales o graduadas del colegio que deseen adquirir conocimientos y experiencias relevantes para potenciar sus carreras en estos sectores.
     imageTitle_en: Juan de Salazar - Creathon
     name_en: KFT Mentorships
     description_en: Mentoring program for the career advancement of women in technology, programming and innovation. Mentoring is done through one-on-one virtual sessions between senior professionals in these areas, and professional women or graduates of the school who wish to acquire relevant knowledge and experiences to enhance their careers in these sectors.
   - image: img/activities/IMG_20160416_161309.png
     imageTitle_es: Juan de Salazar - Creathon
     name_es: Mentorías técnicas
-    description_es: Es un programa de mentorías técnicas te permite seguir una ruta de aprendizaje con el acompañamiento suficiente para superar los obstáculos que presenta la formación en línea. 
-Mediante sesiones virtuales de mentoría uno a uno entre profesionales senior de estas áreas y mujeres profesionales o graduadas del colegio que deseen adquirir conocimientos técnicos e programación para potenciar sus carreras en estos sectores.
+    description_es: Es un programa de mentorías técnicas te permite seguir una ruta de aprendizaje con el acompañamiento suficiente para superar los obstáculos que presenta la formación en línea. Mediante sesiones virtuales de mentoría uno a uno entre profesionales senior de estas áreas y mujeres profesionales o graduadas del colegio que deseen adquirir conocimientos técnicos e programación para potenciar sus carreras en estos sectores.
     imageTitle_en: Juan de Salazar - Creathon
     name_en: Technical Mentorships
-    description_en: This technical mentoring program allows you to follow a learning path with enough support to overcome the obstacles that online training presents.
- 
-The program is conducted through one-on-one virtual mentoring sessions between senior professionals in these areas and professional women or college graduates who wish to acquire technical knowledge and programming to enhance their careers in these sectors.
+    description_en: This technical mentoring program allows you to follow a learning path with enough support to overcome the obstacles that online training presents.The program is conducted through one-on-one virtual mentoring sessions between senior professionals in these areas and professional women or college graduates who wish to acquire technical knowledge and programming to enhance their careers in these sectors.
 panels:
   - image: img/activities/IMG_20160416_161309.png
     imageTitle_es: Juan de Salazar - Creathon
