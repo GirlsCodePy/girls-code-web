@@ -1,12 +1,13 @@
-import { graphql } from "gatsby";
-import React from "react";
-import Layout from "../components/Layout";
-import { ActivitiesPageTemplate } from "./templates-components";
+import { graphql } from 'gatsby';
+import React from 'react';
+import Layout from '../components/Layout';
+import { ActivitiesPageTemplate } from './templates-components';
 import { useTranslatedData } from '../utils';
 
 const ActivitiesPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-  const { title , subtitle, workshops, courses, mentoring } = useTranslatedData(frontmatter)
+  const { title, subtitle, workshops, courses, mentoring } =
+    useTranslatedData(frontmatter);
   return (
     <Layout>
       <ActivitiesPageTemplate
