@@ -42,6 +42,6 @@ testimonies:
     author_en: Author 2 - Sofía Benítez
   - quote_es: El haber tenido la oportunidad de participar en el programa de Mentorías de Girls Code, me ha ayudado a expandir mi punto de vista tanto personal como profesional. Desde entonces estoy cada vez más entusiasmada en este mundo de la Tecnología.
     quote_en: Having had the opportunity to participate in the Girls Code Mentoring Program has helped me expand my point of view both personally and professionally. Since then I am even more excited about this world of Technology.
-    author_es: Author 2 - Moraima Aquino
-    author_en: Author 2 - Moraima Aquino
+    author_es: Author 3 - Moraima Aquino
+    author_en: Author 3 - Moraima Aquino
 ---
