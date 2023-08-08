@@ -27,7 +27,9 @@ git remote add girlscodepy https://github.com/GirlsCodePy/girls-code-web.git
 
 ## 🚀 Instalar dependencias y correr localmente
 
-Ejecutar los comandos en la consola 
+Instalar Node v18 y nvm 
+
+Ejecutar los comandos en la consola para levantar el frontend
 
 ```shell
 yarn install 
@@ -35,6 +37,24 @@ yarn start
 ```
 
 Se levanta el proyecto localmente en http://localhost:8000/
+
+## Trabajar con un repositorio local de Netlify
+
+Agregar al principio del archivo de configuración `local_backend` en el config.yml
+
+```
+backend:
+  name: ...
+
+# when using the default proxy server port
+local_backend: true
+```
+
+2. Ejecutar `npx netlify-cms-proxy-server` desde el directorio principal
+3. En otra terminal, levantar el servidor local: `yarn start`
+4. Abrir http://localhost:8081/admin/ para verificar que puedes administrar tu contenido de Netlify localmente
+
+Nota: `netlify-cms-proxy-server` ejecuta un servidor express no autenticado. SOLAMENTE debe ser utilizado localmente!!
 
 ## Estructura del Proyecto
 ```
@@ -54,23 +74,6 @@ Se levanta el proyecto localmente en http://localhost:8000/
 
 ```
 
-## Trabajar con un repositorio local de Netlify
-
-Agregar al principio del archivo de configuración `local_backend` en el config.yml
-
-```
-backend:
-  name: ...
-
-# when using the default proxy server port
-local_backend: true
-```
-
-2. Ejecutar `npx netlify-cms-proxy-server` desde el directorio principal
-3. En otra terminal, levantar el servidor local: `yarn start`
-4. Abrir http://localhost:8081/admin/ para verificar que puedes administrar tu contenido de Netlify localmente
-
-Nota: `netlify-cms-proxy-server` ejecuta un servidor express no autenticado. SOLAMENTE debe ser utilizado localmente!!
 
 
 ## 🤝 Licencia
