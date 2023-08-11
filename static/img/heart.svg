@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="54px" height="62px" viewBox="0 0 54 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>5D686A5C-C986-4AEB-AA91-5CDFF27523AA@3x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0 9e-05 53.0928 9e-05 53.0928 46.54359 0 46.54359"></polygon>
+    </defs>
+    <g id="Girls-Code-III" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-255.000000, -1547.000000)">
+            <g id="Valores" transform="translate(255.000000, 1376.000000)">
+                <g id="Altruismo" transform="translate(0.000000, 171.000000)">
+                    <g id="icon/altruismo">
+                        <g id="Group-3">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M52.40556,9.31419 C47.45376,-5.54121 26.73036,-0.40581 26.54676,9.31419 C26.36226,-0.40581 5.63886,-5.54121 0.68706,9.31419 C-3.89754,23.98599 15.54246,40.12479 26.54676,46.54359 C37.55016,40.12479 56.99016,23.98599 52.40556,9.31419" id="Fill-1" fill="#5D0F85" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

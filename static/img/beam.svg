@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="62px" viewBox="0 0 44 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>BABBFB4E-CAAD-42F0-A74F-9148A8F758D5@3x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0.000272621081 0.00036 43.0902 0.00036 43.0902 61.4348362 0.000272621081 61.4348362"></polygon>
+    </defs>
+    <g id="Girls-Code-III" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-930.000000, -1539.000000)">
+            <g id="Valores" transform="translate(255.000000, 1376.000000)">
+                <g id="Liderazgo" transform="translate(675.000000, 163.000000)">
+                    <g id="icon/rayo">
+                        <g id="Group-3">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M43.01667,0.46476 C42.88527,0.18216 42.59997,0.00036 42.28767,0.00036 L17.00037,0.00036 C16.69797,0.00036 16.42437,0.16866 16.28667,0.43596 L0.08937,32.06106 C-0.03933,32.30856 -0.02763,32.60736 0.11817,32.84586 C0.26577,33.08436 0.52317,33.23196 0.80667,33.23196 L17.66097,33.23196 C17.66097,33.23196 2.55537,60.31566 4.96917,61.37136 C9.17397,63.21366 41.97627,24.34176 41.97627,24.34176 C42.18777,24.10776 42.24177,23.76846 42.11037,23.47866 C41.98257,23.18616 41.69277,23.00076 41.37597,23.00076 L24.49377,23.00076 L42.90057,1.32516 C43.10217,1.08666 43.14807,0.75096 43.01667,0.46476" id="Fill-1" fill="#5D0F85" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

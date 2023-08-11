@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="62px" viewBox="0 0 49 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 64 (101010) - https://sketch.com -->
+    <title>7E169193-45AC-40A2-B6B3-A16E34F89743@3x</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0.00054 0.00018 48.8628 0.00018 48.8628 48.8628 0.00054 48.8628"></polygon>
+    </defs>
+    <g id="Girls-Code-III" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="About" transform="translate(-594.000000, -1545.000000)">
+            <g id="Valores" transform="translate(255.000000, 1376.000000)">
+                <g id="Compromiso-responsable" transform="translate(338.000000, 169.000000)">
+                    <g id="icon/reloj" transform="translate(1.000000, 0.000000)">
+                        <g id="Group-3">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M26.31114,24.43158 C26.31114,25.46838 25.46874,26.31078 24.43104,26.31078 L15.03504,26.31078 C13.99734,26.31078 13.15584,25.46838 13.15584,24.43158 C13.15584,23.39388 13.99734,22.55238 15.03504,22.55238 L22.55184,22.55238 L22.55184,11.27628 C22.55184,10.23858 23.39424,9.39708 24.43104,9.39708 C25.46874,9.39708 26.31114,10.23858 26.31114,11.27628 L26.31114,24.43158 Z M24.43104,0.00018 C10.95984,0.00018 0.00054,10.96038 0.00054,24.43158 C0.00054,37.90368 10.95984,48.86298 24.43104,48.86298 C37.90314,48.86298 48.86334,37.90368 48.86334,24.43158 C48.86334,10.96038 37.90314,0.00018 24.43104,0.00018 L24.43104,0.00018 Z" id="Fill-1" fill="#5D0F85" mask="url(#mask-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
