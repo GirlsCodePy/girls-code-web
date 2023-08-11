@@ -13,6 +13,7 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
         style={imageStyle}
         fluid={image.childImageSharp.fluid}
         alt={alt}
+        image={image.childImageSharp.gatsbyImageData}
       />
     );
   }
