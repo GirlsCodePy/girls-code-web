@@ -40,7 +40,7 @@ subtitle_en: Values
 values:
     - imageInfo:
           alt: altruism
-          image: /img/heart.png
+          image: /img/heart.svg
       title_es: Altruísmo
       title_en: Altruism
       description_es: > 
@@ -49,7 +49,7 @@ values:
           We work for something bigger than ourselves.
     - imageInfo:
           alt: commitment
-          image: /img/clock.png
+          image: /img/clock.svg
       title_es: Compromiso Responsable
       title_en: Liable Commitment
       description_es: > 
@@ -58,7 +58,7 @@ values:
           We assume the commitment and we carry it out.
     - imageInfo:
           alt: leadership
-          image: /img/beam.png
+          image: /img/beam.svg
       title_es: Liderazgo Representativo
       title_en: Representative Leadership
       description_es: > 
@@ -67,7 +67,7 @@ values:
           We make an impact with our actions and identities.
     - imageInfo:
           alt: assertiveness
-          image: /img/comment.png
+          image: /img/comment.svg
       title_es: Asertividad
       title_en: Assertiveness
       description_es: > 
@@ -76,7 +76,7 @@ values:
           Effective communication.
     - imageInfo:
           alt: resilience
-          image: /img/circle_panel.png
+          image: /img/circle_panel.svg
       title_es: Resiliencia
       title_en: Resilience
       description_es: > 
@@ -85,7 +85,7 @@ values:
           Growth oriented.
     - imageInfo:
           alt: integrity
-          image: /img/filled_square.png
+          image: /img/filled_square.svg
       title_es: Integridad
       title_en: Integrity
       description_es: > 
