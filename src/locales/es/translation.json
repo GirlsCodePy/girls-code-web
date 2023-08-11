@@ -22,7 +22,7 @@
   "subscribeMe": "Subscribirme",
   "whatWeDo": "Qué Hacemos",
   "testimonies": "Testimonios",
-  "us": "Nosotras",
+  "us": "Nosotros",
   "about": "Quiénes Somos",
   "courses": "Cursos",
   "workshops": "Talleres",
@@ -42,5 +42,7 @@
   "textUs": "¡Escribinos!",
   "contactSendError": "Ocurrió un error al enviar el email. Por favor intenta de vuelta",
   "emailSent": "¡Email enviado!",
-  "emailSentMessage": "Muchas gracias. Hemos recibido tu mensaje y nos pondremos en contacto contigo"
+  "emailSentMessage": "Muchas gracias. Hemos recibido tu mensaje y nos pondremos en contacto contigo",
+  "blog": "Blog",
+  "videos": "Videos"
 }
