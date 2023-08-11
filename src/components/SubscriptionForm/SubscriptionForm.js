@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {withTranslation} from "react-i18next";
-import DonateButton from "../DonateButton";
 import {toast} from "react-toastify";
 import "./styles.sass"
 
@@ -86,7 +85,6 @@ const SubscriptionForm = ({t}) => {
                 </label>
             </div>
             <div className="field is-horizontal">
-                <DonateButton label={t("donate")}/>
                 <button type="submit" className="gc-button is-yellow">{t("subscribeMe")}</button>
             </div>
         </form>

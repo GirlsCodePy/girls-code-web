@@ -49,14 +49,11 @@ const Footer = ({t}) => (
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-item" to="/store">
-                    {t("store")}
-                  </Link>
-                </li>
-                <li>
-                  <Link className="footer-item" to="/store/donate">
-                    {t("donate")}
-                  </Link>
+                  <a href="https://www.metrepay.com/girlscode" target="_blank">
+                    <Link className="footer-item">
+                      {t("donate")}
+                    </Link>
+                  </a>
                 </li>
               </ul>
             </section>
