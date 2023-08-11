@@ -1,6 +1,6 @@
 ---
 templateKey: team-page
-title_es: Equipoo
+title_es: Equipoo.
 title_en: Team
 members:
   - name: Gabriela Gaona
