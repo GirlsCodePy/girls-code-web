@@ -14,7 +14,6 @@ export const Partner = ({t}) => (
                 <div><img className="center" src="/img/campus-party.png" alt="campus party" /></div>
                 <div><img className="center" src="/img/paraguay-educa.png" alt="paraguay educa" /></div>
                 <div><img className="center" src="/img/global-shapers.png" alt="global shapers" /></div>
-                <div><img className="center enfoque" src="/img/enfoque-ninez.png" alt="enfoque niñez" /></div>
                 <div><img className="center" src="/img/django-girls.png" alt="django girls" /></div>
             </div>
         </div>
