@@ -73,8 +73,7 @@ const ContactForm = ({ sendEmail, form, sending, t }) => {
                   justifyContent: 'space-evenly',
                 }}
               >
-                <p className="socials-text">+595 981 931 249</p>
-                <p className="socials-text">+595 981 631 303</p>
+                <p className="socials-text">+595 983 333 133</p>
                 <p className="socials-text">contacto@girlscode.com.py</p>
               </div>
               <div className="socials socials-icon-container">
@@ -112,7 +111,7 @@ const ContactForm = ({ sendEmail, form, sending, t }) => {
                 </a>
                 <a
                   title="Youtube"
-                  href="https://www.youtube.com/channel/UCP6E5xXwLJ6OWtM4E1DSQvw"
+                  href="https://www.youtube.com/@girlscodepy/videos"
                   target="_blank"
                   rel="noreferrer"
                 >

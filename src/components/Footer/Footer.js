@@ -110,7 +110,7 @@ const Footer = ({t}) => (
                     </a>
                     <a
                         title="Youtube"
-                        href="https://www.youtube.com/channel/UCP6E5xXwLJ6OWtM4E1DSQvw"
+                        href="https://www.youtube.com/@girlscodepy/videos"
                         target="_blank"
                         rel="noreferrer"
                     >
