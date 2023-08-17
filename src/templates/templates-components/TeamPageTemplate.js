@@ -14,7 +14,7 @@ const TeamPageTemplate = ({ title, members }) => (
       </div>
       {members.map(({ name, position, image }) => (
         <div className="column is-3">
-          <TeamMember name={name} position={position} imageSrc={image.publicURL} />
+          <TeamMember name={name} position={position} imageSrc={image} />
         </div>
       ))}
     </div>
