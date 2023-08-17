@@ -35,9 +35,9 @@ workshops:
     name_en: Tools for developing virtual classes for teachers
     description_en: A workshop to learn basic tools for online class development such as Google Classroom and Zoom.
 courses:
-  - image: img/GC-rodi.jpeg
+  - image: img/GC-rodi.png
     imageTitle_es: Taller de RoDi
-    name_es: Clud de robótica con RoDi
+    name_es: Club de robótica con RoDi
     description_es:  Esta formación busca introducir conceptos de programación para el desarrollo del pensamiento en niñas/os, promover y estimular la creatividad a través de la colaboración e intercambio para imaginar, crear y programar.
     imageTitle_en: RoDi Workshopt
     name_en: RoDi Robotics Club
