@@ -28,16 +28,6 @@ const SubscriptionForm = ({t}) => {
         setValues({...values, [name]: value})
     };
 
-    const clearValues = () => {
-        setValues(initialState);
-    };
-
-    const encode = (data) => {
-        return Object.keys(data)
-            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-            .join("&");
-    };
-
     const handleSubmit = e => {
         e.preventDefault()
         
@@ -60,18 +50,6 @@ const SubscriptionForm = ({t}) => {
               toast.error(t('subscriptionError'));
             }
           );
-
-        // fetch("/", {
-        //     method: "POST",
-        //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        //     body: encode({ "form-name": "subscription", ...values })
-        // }).then(() => {
-        //     toast.success(t("subscriptionSuccess"))
-        //     clearValues();
-        // }).catch(error => {
-        //     toast.error(t("subscriptionError"))
-        //     console.error(error)
-        // });
     };
 
     return (
