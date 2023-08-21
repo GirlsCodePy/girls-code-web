@@ -47,7 +47,12 @@ const CustomNavbar = ({t, color =  "#CA00CA", className}) => {
           <Link className="navbar-item" to="/contact">
           {t("contact")}
           </Link>
-
+          <a href="https://medium.com/@girlscodepy" target="_blank" className="navbar-item">
+            {t("Blog")}
+          </a>
+          <a href="https://www.youtube.com/@girlscodepy/videos" target="_blank" className="navbar-item">
+            {t("Videos")}
+          </a>
           <Navbar.Item href="#">
             <LanguageSwitcher abbr customClassName={'navbar-lang'} />
           </Navbar.Item>

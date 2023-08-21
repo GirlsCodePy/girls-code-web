@@ -49,14 +49,11 @@ const Footer = ({t}) => (
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-item" to="/store">
-                    {t("store")}
-                  </Link>
-                </li>
-                <li>
-                  <Link className="footer-item" to="/store/donate">
-                    {t("donate")}
-                  </Link>
+                  <a href="https://www.metrepay.com/girlscode" target="_blank">
+                    <Link className="footer-item">
+                      {t("donate")}
+                    </Link>
+                  </a>
                 </li>
               </ul>
             </section>
@@ -107,7 +104,7 @@ const Footer = ({t}) => (
                     </a>
                     <a
                         title="Youtube"
-                        href="https://www.youtube.com/channel/UCP6E5xXwLJ6OWtM4E1DSQvw"
+                        href="https://www.youtube.com/@girlscodepy/videos"
                         target="_blank"
                         rel="noreferrer"
                     >
