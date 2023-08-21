@@ -30,13 +30,7 @@ export const teamPageQuery = graphql`
           name
           position_es
           position_en
-          image {
-            childImageSharp {
-              gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-            }
-            extension
-            publicURL
-          }
+          image
         }
       }
     }
