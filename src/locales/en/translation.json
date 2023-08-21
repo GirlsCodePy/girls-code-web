@@ -42,5 +42,7 @@
   "textUs": "Text us!",
   "contactSendError": "Error sending email. Please try again",
   "emailSent": "Email sent!",
-  "emailSentMessage": "Thanks. We've received your message and will contact you soon!"
+  "emailSentMessage": "Thanks. We've received your message and will contact you soon!",
+  "blog": "Blog",
+  "videos": "Videos"
 }
