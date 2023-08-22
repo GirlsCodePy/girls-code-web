@@ -44,11 +44,6 @@ const Footer = ({t}) => (
                   </Link>
                 </li>
                 <li>
-                  <Link className="footer-item" to="/activities/resources">
-                    {t("resources")}
-                  </Link>
-                </li>
-                <li>
                   <a href="https://www.metrepay.com/girlscode" target="_blank">
                     <Link className="footer-item">
                       {t("donate")}
