@@ -20,7 +20,7 @@ workshops:
     imageTitle_en: CEM workshop - Creathon
     name_en: Introduction to Programming
     description_en: Workshops to learn about introductory programming platforms such as Scratch and Code.org. Students learn basic concepts of algorithms, programming languages, and computer programming.
-  - image: img/GC-cv-canva.png
+  - image: img/GC-cv-canva.jpg
     imageTitle_es: HackerFem
     name_es: Diseñando tu primer CV con Canva
     description_es: Un taller para presentar la plataforma Canva mostrando las secciones y herramientas disponibles para diseño y plantillas. Las alumnas aprenden sobre las buenas prácticas para elaborar una hoja de vida personal.
