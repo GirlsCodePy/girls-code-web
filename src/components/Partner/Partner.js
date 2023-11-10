@@ -27,6 +27,7 @@ export const Partner = ({t}) => (
                 <div><img className="center" src="/img/willdom.png" alt="willdom" /></div>
                 <div><img className="center" width="147" height="187" src="/img/tedic.png" alt="tedic" /></div>
                 <div><img className="center" src="/img/UCOM.png" alt="ucom" /></div>
+                <div><img className="center" src="/img/tecnopy.jpg" alt="tecnopy" /></div>
             </div>
         </div>
     </>
