@@ -58,7 +58,7 @@ const Footer = ({t}) => (
               <div className="footer-title">{t("contact")}</div>
               <ul className="footer-menu-list">
                 <li>
-                  <p className="footer-item">+595 983 333 133</p>
+                  <p className="footer-item">+595 981 931 249</p>
                 </li>
                 <li>
                   <p className="footer-item">contacto@girlscode.com.py</p>
@@ -119,7 +119,7 @@ const Footer = ({t}) => (
           </div>
         </div>
         <div className="content has-text-right copyright">
-          <p className="text">© 2021 #EllasCreanSiCreemosEnEllas All rights reserved</p>
+          <p className="text">© 2025 #EllasCreanSiCreemosEnEllas All rights reserved</p>
           <img
               src={logo}
               alt="girlscode"
