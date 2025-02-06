@@ -73,5 +73,9 @@
     "eslint-webpack-plugin": "^3.2.0",
     "gatsby-plugin-eslint": "^4.0.2",
     "prettier": "^2.0.5"
+  },
+  { 
+  "engines" : { 
+    "node" : "v18.20.0" 
   }
 }
