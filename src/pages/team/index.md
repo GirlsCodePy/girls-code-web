@@ -1,5 +1,5 @@
 ---
-templateKey: "team-page"
+templateKey: team-page
 title_es: Equipo
 title_en: Team
 members:
