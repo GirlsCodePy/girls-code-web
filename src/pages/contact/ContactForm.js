@@ -73,8 +73,8 @@ const ContactForm = ({ sendEmail, form, sending, t }) => {
                   justifyContent: 'space-evenly',
                 }}
               >
-                <p className="socials-text">+595 981 931 249</p>
-                <p className="socials-text">contacto@girlscode.com.py</p>
+                <p className="socials-text">+595 971 996145</p>
+                <p className="socials-text">coordinacion@girlscode.com.py</p>
               </div>
               <div className="socials socials-icon-container">
                 <a

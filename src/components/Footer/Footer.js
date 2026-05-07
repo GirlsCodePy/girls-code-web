@@ -58,10 +58,10 @@ const Footer = ({t}) => (
               <div className="footer-title">{t("contact")}</div>
               <ul className="footer-menu-list">
                 <li>
-                  <p className="footer-item">+595 981 931 249</p>
+                  <p className="footer-item">+595 971 996145</p>
                 </li>
                 <li>
-                  <p className="footer-item">contacto@girlscode.com.py</p>
+                  <p className="footer-item">coordinacion@girlscode.com.py</p>
                 </li>
                 <li>
                   <div className="social footer-item">
